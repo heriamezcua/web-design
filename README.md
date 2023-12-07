@@ -6,4 +6,4 @@ In this repository you will find the different projects that I have carried out 
 <a href="https://restaurant-heriamezcua.netlify.app/" >Restaurant</a>
 
 <h2>Travel Agency</h2>
-<a href="https://travelTurkey-heriamezcua.netlify.app/" >Turkey Travel Agency</a>
+<a href="https://turkeytravel-agency.netlify.app/" >Turkey Travel Agency</a>
