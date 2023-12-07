@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Turkey</title>
+    <link rel="icon" href="./assets/icons/icon-web.svg" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
+  </head>
+  <body>
+    <header>
+      <div class="wrapper">
+        <div class="logo-box">
+          <div class="logo"></div>
+          <p class="logo-text">Turkey</p>
+        </div>
+
+        <nav class="header-nav">
+          <ul class="nav-list">
+            <li>
+              <a href="./index.html" class="nav-list-link">Home </a>
+            </li>
+            <li>
+              <a href="./come.html" class="nav-list-link">How to come</a>
+            </li>
+            <li>
+              <a href="./routes.html" class="nav-list-link">Routes</a>
+            </li>
+            <li>
+              <a href="./contact.html" class="nav-list-link link-active"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <button onclick="goToTop()" class="header-btn">
+          <div class="arrow"></div>
+          Back to top
+        </button>
+
+        <button class="btn-mobile-nav">
+          <img
+            class="icon-mobile-nav icon-menu"
+            src="./assets/icons/menu-1-svgrepo-com.svg"
+            alt=""
+          />
+          <img
+            class="icon-mobile-nav icon-close"
+            name="icon-close"
+            src="./assets/icons/close-svgrepo-com.svg"
+            alt=""
+          />
+        </button>
+      </div>
+    </header>
+    <main>
+      <!----- SECTION HERO ----->
+      <section class="section-hero">
+        <h2 class="heading-hero">CONTACT</h2>
+      </section>
+      <!----- END SECTION HERO ----->
+      <!----- SECTION OFFICES ----->
+      <section class="section-offices">
+        <div class="offices">
+          <div class="section-headings-box">
+            <h2 class="heading-secondary">
+              01&nbsp;&nbsp;/&nbsp;&nbsp;OFFICES
+            </h2>
+            <h2 class="heading-primary">Discover our offices!</h2>
+          </div>
+
+          <div class="office-1">
+            <div class="offices-box">
+              <div class="office">
+                <div class="office-img office-img-1"></div>
+                <div class="office-text-box">
+                  <p class="office-text office-address">
+                    Buyukdere Avenue, Istanbul, 34330
+                  </p>
+                  <div class="office-icon-box">
+                    <div class="icon icon-phone"></div>
+                    <p class="office-text">+90 123 45 67 89</p>
+                  </div>
+                  <div class="office-icon-box">
+                    <div class="icon icon-mail"></div>
+                    <p class="office-text">istambulturkey@office.tr</p>
+                  </div>
+                  <button class="btn btn-map">Watch map</button>
+                </div>
+              </div>
+              <div class="office">
+                <div class="office-img office-img-2"></div>
+                <div class="office-text-box">
+                  <p class="office-text office-address">
+                    Atatürk Blv, Ankara, 0
+                  </p>
+                  <div class="office-icon-box">
+                    <div class="icon icon-phone"></div>
+                    <p class="office-text">+90 456 12 37 89</p>
+                  </div>
+                  <div class="office-icon-box">
+                    <div class="icon icon-mail"></div>
+                    <p class="office-text">ankaraturkey@office.tr</p>
+                  </div>
+                  <button class="btn btn-map">Watch map</button>
+                </div>
+              </div>
+              <div class="office">
+                <div class="office-img office-img-3"></div>
+                <div class="office-text-box">
+                  <p class="office-text office-address">
+                    Mevlana caddesi, Antalya, 07312
+                  </p>
+                  <div class="office-icon-box">
+                    <div class="icon icon-phone"></div>
+                    <p class="office-text">+90 98 765 43 21</p>
+                  </div>
+                  <div class="office-icon-box">
+                    <div class="icon icon-mail"></div>
+                    <p class="office-text">antalyaTurkey@office.tr</p>
+                  </div>
+                  <button class="btn btn-map">Watch map</button>
+                </div>
+              </div>
+              <a class="btn-info" href="#"
+                ><div class="icon-rarr"></div>
+                See all offices
+              </a>
+            </div>
+            <div class="offices-map">
+              <iframe
+                src="https://www.google.com/maps/d/u/1/embed?mid=14XxSGgUFDTJBo73joNzDCUXcJhEuqw0&ehbc=2E312F&noprof=1"
+                width="100%"
+                height="600"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!----- END SECTION OFFICES ----->
+      <!----- SECTION FORM ----->
+      <section class="section-contact">
+        <div class="contact">
+          <div class="section-headings-box">
+            <h2 class="heading-secondary-center">
+              02&nbsp;&nbsp;/&nbsp;&nbsp;CONTACT
+            </h2>
+            <h2 class="heading-primary">Get in touch</h2>
+          </div>
+
+          <div class="contact-1">
+            <div class="form-box">
+              <form>
+                <label for="name">Name <span>*</span></label>
+                <input type="text" />
+                <label for="name">Email <span>*</span></label>
+                <input type="text" />
+                <label for="name">Phone</label>
+                <input type="text" />
+                <label for="name">Affair <span>*</span></label>
+                <input type="text" />
+                <label for="name">Message</label>
+                <!-- <textarea name="message" cols="30" rows="10"></textarea> -->
+                <textarea name="message"></textarea>
+                <input type="submit" value="Send" />
+              </form>
+            </div>
+            <div class="form-img-box"></div>
+          </div>
+        </div>
+      </section>
+      <!----- END SECTION FORM ----->
+      <!----- SECTION GEOLOCATION ----->
+      <section class="section-geolocation">
+        <div class="geolocation">
+          <div class="section-headings-box">
+            <h2 class="heading-secondary-center">
+              03&nbsp;&nbsp;/&nbsp;&nbsp;GEOLOCATION
+            </h2>
+            <h2 class="heading-primary">A satellite perspective</h2>
+          </div>
+          <iframe
+            src="https://www.google.com/maps/d/u/1/embed?mid=1g6sV_ldZiWNayZekK6wjsf8pEOFsUIc&ehbc=2E312F&noprof=1"
+            width="100%"
+            height="700"
+          ></iframe>
+        </div>
+      </section>
+      <!----- END SECTION GEOLOCATION ----->
+      <!----- SECTION ACOMMODATIONS ----->
+      <section class="section-acommodation">
+        <div class="acommodation">
+          <div class="section-headings-box">
+            <h2 class="heading-secondary">
+              04&nbsp;&nbsp;/&nbsp;&nbsp;ACOMMODATIONS
+            </h2>
+            <h2 class="heading-primary">
+              Accommodation varieties for every travel style
+            </h2>
+          </div>
+
+          <div class="aco-1">
+            <div class="aco-hotels-box">
+              <div class="options-box">
+                <button class="option">Hotels</button>
+                <button class="option">Hostals</button>
+                <button class="option">Rural houses</button>
+                <button class="option active">Campings</button>
+              </div>
+              <div class="results-box">
+                <!-- RESULT 1 -->
+                <div class="result">
+                  <div class="result-img-box result-img-1"></div>
+                  <div class="result-content-box">
+                    <div class="content-1">
+                      <p class="result-name">Olympos Mocamp</p>
+                      <div class="provider-box">
+                        <div class="icon-verified"></div>
+                        <div class="provider-img"></div>
+                      </div>
+                      <p class="price">70 €</p>
+                      <a class="btn-deal" href="#">View deal</a>
+                    </div>
+                    <div class="content-2">
+                      <div class="stars-box">
+                        <div class="icon-star"></div>
+                        <div class="icon-star"></div>
+                        <div class="icon-star"></div>
+                        <div class="icon-star"></div>
+                        <div class="icon-star"></div>
+                      </div>
+                      <div class="contains-box">
+                        <div class="icon-box">
+                          <div class="icon icon-wifi"></div>
+                          <div class="icon-text">Free wifi</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- RESULT 2 -->
+                <div class="result">
+                  <div class="result-img-box result-img-2"></div>
+                  <div class="result-content-box">
+                    <div class="content-1">
+                      <p class="result-name">Oludeniz doga kamp</p>
+                      <div class="provider-box">
+                        <div class="icon-verified"></div>
+                        <div class="provider-img"></div>
+                      </div>
+                      <p class="price">100 €</p>
+                      <a class="btn-deal" href="#">View deal</a>
+                    </div>
+                    <div class="content-2">
+                      <div class="stars-box">
+                        <div class="icon-star"></div>
+                        <div class="icon-star"></div>
+                        <div class="icon-star"></div>
+                        <div class="icon-star"></div>
+                        <div class="icon-star"></div>
+                      </div>
+                      <div class="contains-box">
+                        <div class="icon-box">
+                          <div class="icon icon-wifi"></div>
+                          <div class="icon-text">Free wifi</div>
+                        </div>
+                        <div class="icon-box">
+                          <div class="icon icon-parking"></div>
+                          <div class="icon-text">Free parking</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- RESULT 3 -->
+                <div class="result">
+                  <div class="result-img-box result-img-3"></div>
+                  <div class="result-content-box">
+                    <div class="content-1">
+                      <p class="result-name">Tepe camping</p>
+                      <div class="provider-box">
+                        <div class="icon-verified"></div>
+                        <div class="provider-img"></div>
+                      </div>
+                      <p class="price">57 €</p>
+                      <a class="btn-deal" href="#">View deal</a>
+                    </div>
+
+                    <div class="content-2">
+                      <div class="stars-box">
+                        <div class="icon-star"></div>
+                        <div class="icon-star"></div>
+                        <div class="icon-star"></div>
+                        <div class="icon-star"></div>
+                        <div class="icon-star"></div>
+                      </div>
+                      <div class="contains-box">
+                        <div class="icon-box">
+                          <div class="icon icon-wifi"></div>
+                          <div class="icon-text">Free wifi</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="pagination">
+                <button class="icon icon-chev-left"></button>
+                <button class="page selected"><p class="number">1</p></button>
+                <button class="page"><p class="number">2</p></button>
+                <button class="page"><p class="number">3</p></button>
+                <p class="dots">...</p>
+                <button class="page"><p class="number">12</p></button>
+                <button class="icon icon-chev-right"></button>
+              </div>
+            </div>
+            <div class="aco-map-box">
+              <iframe
+                src="https://www.google.com/maps/d/u/1/embed?mid=1Ks1JslDjKFTAuw1QA6eMXujPCdps2r0&ehbc=2E312F&noprof=1"
+                width="100%"
+                height="530"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!----- END SECTION ACOMMODATIONS ----->
+    </main>
+    <footer>
+      <div class="line-red"></div>
+      <div class="columns-box">
+        <div class="logo-col">
+          <div class="logo-box">
+            <div class="logo"></div>
+            <p class="logo-text">Turkey</p>
+          </div>
+
+          <p class="slogan">For Turkey lovers around the world</p>
+
+          <nav>
+            <p class="social-title">FOLLOW US</p>
+            <ul class="social-list">
+              <li>
+                <a class="social-link" href="#"
+                  ><div class="social-icon facebook"></div
+                ></a>
+              </li>
+              <li>
+                <a class="social-link instagram" href="#"
+                  ><div class="social-icon instagram"></div
+                ></a>
+              </li>
+              <li>
+                <a class="social-link" href="#"
+                  ><div class="social-icon pinterest"></div
+                ></a>
+              </li>
+              <li>
+                <a class="social-link" href="#"
+                  ><div class="social-icon twitter"></div
+                ></a>
+              </li>
+              <li>
+                <a class="social-link" href="#"
+                  ><div class="social-icon youtube"></div
+                ></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="info-cols">
+          <!-- INFO COL 1 -->
+          <div class="info-col">
+            <p class="info-heading">TOP DESTINATIONS</p>
+            <ul class="info-list">
+              <li>
+                <a class="info-link" href="#"
+                  ><div class="info-icon"></div>
+                  Istambul</a
+                >
+              </li>
+              <li>
+                <a class="info-link" href="#"
+                  ><div class="info-icon"></div>
+                  Antalya</a
+                >
+              </li>
+              <li>
+                <a class="info-link" href="#"
+                  ><div class="info-icon"></div>
+                  Ankara</a
+                >
+              </li>
+              <li>
+                <a class="info-link" href="#"
+                  ><div class="info-icon"></div>
+                  Konya</a
+                >
+              </li>
+              <li>
+                <a class="info-link" href="#"
+                  ><div class="info-icon"></div>
+                  Trebisonda</a
+                >
+              </li>
+              <li>
+                <a class="info-link" href="#"
+                  ><div class="info-icon"></div>
+                  Fethiye</a
+                >
+              </li>
+              <li>
+                <a class="info-link" href="#"
+                  ><div class="info-icon"></div>
+                  Bursa</a
+                >
+              </li>
+              <li>
+                <a class="info-link" href="#"
+                  ><div class="info-icon"></div>
+                  Sanliurfa</a
+                >
+              </li>
+              <li>
+                <a class="info-link" href="#"
+                  ><div class="info-icon"></div>
+                  Edirne</a
+                >
+              </li>
+              <li>
+                <a class="info-link" href="#"
+                  ><div class="info-icon"></div>
+                  Adana</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- INFO COL 2 -->
+          <div class="info-col">
+            <p class="info-heading">TRAVEL INTERESTS</p>
+            <ul class="info-list">
+              <li>
+                <a class="info-link" href="#"
+                  ><div class="info-icon"></div>
+                  Adventure travel</a
+                >
+              </li>
+              <li>
+                <a class="info-link" href="#"
+                  ><div class="info-icon"></div>
+                  Art and culture</a
+                >
+              </li>
+              <li>
+                <a class="info-link" href="#"
+                  ><div class="info-icon"></div>
+                  Beaches, coast and islands</a
+                >
+              </li>
+              <li>
+                <a class="info-link" href="#"
+                  ><div class="info-icon"></div>
+                  Family holidays</a
+                >
+              </li>
+              <li>
+                <a class="info-link" href="#"
+                  ><div class="info-icon"></div>
+                  Festivals</a
+                >
+              </li>
+              <li>
+                <a class="info-link" href="#"
+                  ><div class="info-icon"></div>
+                  Food and drink</a
+                >
+              </li>
+              <li>
+                <a class="info-link" href="#"
+                  ><div class="info-icon"></div>
+                  Honeymoon</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- INFO COL 3 -->
+          <div class="info-col">
+            <p class="info-heading">ABOUT US</p>
+            <ul class="info-list">
+              <li>
+                <a class="info-link" href="./contact.html"
+                  ><div class="info-icon"></div>
+                  Contact us</a
+                >
+              </li>
+              <li>
+                <a class="info-link" href="#"
+                  ><div class="info-icon"></div>
+                  Trade and advertising</a
+                >
+              </li>
+              <li>
+                <a class="info-link" href="#"
+                  ><div class="info-icon"></div>
+                  Privacy policy</a
+                >
+              </li>
+              <li>
+                <a class="info-link" href="#"
+                  ><div class="info-icon"></div>
+                  Terms and conditions</a
+                >
+              </li>
+              <li>
+                <a class="info-link" href="#"
+                  ><div class="info-icon"></div>
+                  Work for us</a
+                >
+              </li>
+              <li>
+                <a class="info-link" href="#"
+                  ><div class="info-icon"></div>
+                  Cookie settings</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="copy-banner">
+        <p class="copy-text">
+          © 2023 Turkey. All rights reserved. No part of this site may be
+          reproduced without our written permission.
+        </p>
+      </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

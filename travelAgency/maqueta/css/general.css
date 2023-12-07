@@ -1,0 +1,657 @@
+/*
+ ---- 01 TYPOGRAPHY SYSTEM
+
+- FONT SIZES (px):
+  10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- FONT WEIGHTS:
+  default: 400
+  medium: 500
+  semi-bold: 600
+  bold: 700
+
+- LINE HEIGHTS:
+  default: 1
+  small: 1.05
+  medium: 1.2
+  Paragraph default: 1.6  
+
+- LETTER SPACING:
+    0.5px
+    0.75px
+ ---- 02 COLOURS
+ 
+ - Primary: #ffffff #d80707 
+ - Tints:
+ - Shades:
+ - Accents:
+ - Greys:
+ 
+ ---- 05 SHADOWS
+
+
+
+ ---- 06 BORDER-RADIUS
+ Default: 9px 
+ 11px
+
+ ---- 07 WHITESPACE
+
+ - Spacing System (px)
+    2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 
+ 
+*/
+
+/*********************************
+*           GENERAL CSS          *
+*********************************/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+:root {
+  --main-font: 'Montserrat', sans-serif;
+
+  --primary-color: #d80707;
+
+  --text-color: #555;
+  --title-color: #111;
+
+  --space-sm: 1.6rem;
+  --space-md: 3.2rem;
+  --space-bg: 6.4rem;
+
+  --div-yellow: 2px solid yellow;
+  --div-blue: 2px solid blue;
+  --div-red: 2px solid red;
+}
+
+html {
+  font-size: 62.5%; /* I make 1 rem  = 10 px */
+  scroll-behavior: smooth;
+
+  overflow-x: hidden; /* I make sure mobile navigation is hidden when close */
+}
+
+body {
+  overflow-x: hidden; /* I make sure mobile navigation is hidden when close */
+  font-family: var(--main-font);
+
+  color: var(--text-color);
+  font-size: 1.6rem;
+  line-height: 1;
+}
+
+/* HEADINGS */
+
+.heading-primary {
+  font-size: clamp(2.8rem, 2.474rem + 1.605vw, 4.4rem);
+  line-height: 1.3;
+  font-weight: 600;
+  color: #111;
+}
+
+.heading-secondary {
+  font-size: clamp(1.4rem, 1.3185rem + 0.4013vw, 1.8rem);
+  font-weight: 500;
+
+  /* I make possible gradient text */
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(196, 7, 7, 1) 8%
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.heading-secondary-center {
+  font-size: clamp(1.4rem, 1.3185rem + 0.4013vw, 1.8rem);
+  font-weight: 500;
+
+  /* I make possible gradient text */
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 43%,
+    rgba(196, 7, 7, 1) 55%
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.heading-hero {
+  font-size: clamp(5.2rem, 4.9962rem + 1.0031vw, 6.2rem);
+  font-weight: 400;
+  letter-spacing: 1rem;
+  color: white;
+  filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.7));
+}
+
+/* ANCHORS */
+a {
+  font-family: var(--main-font);
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+/* BUTTONS */
+button {
+  text-decoration: none;
+  border: none;
+  background-color: #fff;
+  font-size: 1.6rem;
+  font-family: var(--main-font);
+  cursor: pointer;
+}
+/*********************************
+*           HEADER               *
+*********************************/
+
+header {
+  position: fixed;
+  z-index: 999;
+  background-color: #fff;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+}
+
+header .wrapper {
+  height: 6rem;
+  width: 100%;
+  max-width: 153.6rem;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+}
+
+header .logo-box {
+  flex: 0 0 13rem;
+
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  align-content: center;
+}
+
+header .logo {
+  flex: 0 0 4rem;
+  height: 4rem;
+  margin-right: 0.5rem;
+
+  background-image: url(../assets/icons/turkey-republic-day-moon-and-star-symbol-flat-style-free-vector.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+header .logo-text {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: var(--title-color);
+}
+
+.header-nav {
+  flex: 0 0 auto;
+}
+
+.header-nav .nav-list {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.header-nav .nav-list-link {
+  font-size: 1.6rem;
+  color: #111;
+  padding: 1.9rem 1.6rem;
+}
+
+.header-nav .nav-list-link:hover {
+  border-bottom: 3px solid red;
+}
+
+.header-nav .link-active {
+  border-bottom: 3px solid red;
+}
+
+.header-nav .link-active .nav-mobile-icon {
+  display: none;
+}
+
+header .header-btn {
+  flex: 0 0 14rem;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+header .arrow {
+  flex: 0 0 2.4rem;
+  height: 2.4rem;
+  margin-right: 1rem;
+
+  background-image: url(../assets/icons/up-arrow-svgrepo-com.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+/* MOBILE */
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  width: 4rem;
+  height: 4rem;
+  /* margin: 2rem; */
+}
+
+.icon-menu {
+  background-image: url(../assets/icons/menu-1-svgrepo-com.svg);
+}
+
+.icon-close {
+  background-image: url(../assets/icons/close-svgrepo-com.svg);
+}
+
+.btn-mobile-nav .icon-close {
+  display: none;
+}
+
+/*********************************
+*             FOOTER             *
+*********************************/
+
+footer {
+  width: 100%;
+}
+
+footer .columns-box {
+  max-width: 153.6rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+footer .logo-col {
+  flex: 0 0 30%;
+}
+
+footer .info-cols {
+  flex: 0 0 70%;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+
+  margin-top: var(--space-sm);
+}
+
+footer .info-col {
+  margin-right: var(--space-bg);
+}
+
+footer .info-col:last-child {
+  margin-right: 0;
+}
+
+.line-red {
+  max-width: 153.6rem;
+  margin: 0 auto;
+  border: 1px solid var(--primary-color);
+
+  margin-bottom: var(--space-bg);
+}
+
+footer .logo-box {
+  flex: 0 0 13rem;
+
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  align-content: center;
+}
+
+footer .logo {
+  flex: 0 0 8.4rem;
+  height: 8.4rem;
+  margin-right: 0.5rem;
+
+  background-image: url(../assets/icons/turkey-republic-day-moon-and-star-symbol-flat-style-free-vector.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+footer .logo-text {
+  font-size: clamp(2.4rem, 2.2166rem + 0.9028vw, 3.3rem);
+  font-weight: 600;
+  color: var(--title-color);
+}
+
+footer .slogan {
+  font-size: clamp(1.4rem, 1.3592rem + 0.2006vw, 1.6rem);
+  line-height: 1.4;
+  color: #111;
+  margin: var(--space-sm) 0 var(--space-md) 0;
+}
+
+footer .social-title {
+  font-size: clamp(1.4rem, 1.3592rem + 0.2006vw, 1.6rem);
+  font-weight: 500;
+  color: #111;
+
+  margin-bottom: var(--space-sm);
+}
+
+.social-list {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  align-content: center;
+}
+
+.social-icon {
+  width: 3.2rem;
+  height: 3.2rem;
+  margin-right: 1rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.facebook {
+  background-image: url(../assets/icons/facebook.svg);
+}
+
+.instagram {
+  background-image: url(../assets/icons/instagram.svg);
+}
+
+.pinterest {
+  background-image: url(../assets/icons/pinterest.svg);
+}
+
+.twitter {
+  background-image: url(../assets/icons/twitter.svg);
+}
+
+.youtube {
+  background-image: url(../assets/icons/youtube.svg);
+}
+
+.info-heading {
+  font-size: clamp(1.4rem, 1.3592rem + 0.2006vw, 1.6rem);
+  color: #111;
+  font-weight: 500;
+
+  margin-bottom: var(--space-md);
+}
+
+.info-link {
+  margin-bottom: var(--space-sm);
+  font-size: clamp(1.4rem, 1.3592rem + 0.2006vw, 1.6rem);
+
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+.info-link:hover {
+  color: #111;
+}
+
+.info-icon {
+  width: 1.6rem;
+  height: 1.6rem;
+  margin-right: 0.5rem;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  background-image: url(../assets/icons/rigth-arr.svg);
+}
+
+.copy-banner {
+  background-color: var(--primary-color);
+  padding: 2rem 1rem;
+  margin-top: var(--space-md);
+}
+
+.copy-text {
+  text-align: center;
+  font-size: clamp(1rem, 0.8777rem + 0.6019vw, 1.6rem);
+  color: #fff;
+}
+
+/*********************************
+*         HEADER QUERIES         *
+*********************************/
+
+@media screen and (max-width: 800px) {
+  /* MOBILE NAVIGATION */
+  .disable-scroll {
+    overflow: hidden;
+  }
+
+  header .logo-box {
+    padding: 1rem;
+  }
+
+  header {
+    position: fixed;
+
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  header .wrapper {
+    height: 4rem;
+  }
+
+  .header-btn {
+    display: none !important;
+  }
+
+  .header-nav {
+    position: fixed;
+    z-index: 2;
+
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    /* transform: translateY(-100%); */
+    transition: all 0.2s;
+
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+    /* Hide navigation */
+    /* does not allow transitions */
+    /* display: none; */
+
+    /* hide navigation */
+    opacity: 0;
+
+    /* unaccesible to mouse and keyboard */
+    pointer-events: none;
+
+    /* hide it from screen readers*/
+    visibility: hidden;
+  }
+
+  .nav-open {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    /* transform: translateY(0); */
+
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-nav .nav-list {
+    top: auto;
+    right: auto;
+
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+  }
+
+  .nav-list li {
+    margin-bottom: var(--space-bg);
+  }
+
+  .nav-list a {
+    font-size: 2.4rem !important;
+    color: #fff !important;
+    border-bottom: none;
+  }
+
+  .nav-list a:hover {
+    border-bottom: none !important;
+  }
+
+  .nav-list .link-active {
+    border-bottom: none !important;
+  }
+
+  .btn-mobile-nav {
+    display: block;
+    z-index: 5;
+    position: fixed;
+    right: 0;
+  }
+
+  .open .icon-close {
+    width: 3.2rem;
+    height: 3.2rem;
+    display: block;
+  }
+
+  .open .icon-menu {
+    display: none;
+  }
+
+  .nav-open a.active::after {
+    content: '\00a0\00a0'; /* I put a whitespace to separate */
+  }
+
+  .header-nav .link-active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/*********************************
+*         FOOTER QUERIES         *
+*********************************/
+
+@media screen and (max-width: 1107px) {
+  .line-red {
+    max-width: 95%;
+  }
+
+  footer {
+    text-align: left;
+  }
+
+  footer .logo-col {
+    flex: 0 0 100%;
+
+    margin-bottom: var(--space-md);
+  }
+
+  footer .info-cols {
+    flex: 0 0 100%;
+    justify-content: flex-start;
+  }
+
+  footer .info-col {
+    flex: 0 0 32%;
+    margin-top: var(--space-md);
+    margin-right: 1rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  footer .info-cols {
+    justify-content: space-between;
+  }
+
+  footer .logo-col {
+    flex: 0 0 100%;
+
+    margin-bottom: var(--space-md);
+  }
+}
+
+@media screen and (max-width: 650px) {
+  footer .info-col {
+    flex: 0 0 40%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  footer .columns-box {
+    padding: 1rem;
+  }
+
+  footer .info-heading {
+    margin-bottom: 2rem;
+  }
+
+  footer .logo {
+    flex: 0 0 6.4rem;
+    height: 6.4rem;
+  }
+
+  footer .info-icon {
+    width: 1.4rem;
+    height: 1.4rem;
+  }
+
+  footer .copy-banner {
+    margin-top: 0;
+  }
+
+  footer .info-col {
+    flex: 0 0 100%;
+    margin-top: var(--space-sm);
+  }
+
+  .line-red {
+    margin-bottom: var(--space-sm);
+  }
+
+  footer .logo-col {
+    margin-bottom: 0;
+  }
+}

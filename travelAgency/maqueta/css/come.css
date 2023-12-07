@@ -1,0 +1,1108 @@
+/*********************************
+*             HERO               *
+*********************************/
+
+.section-hero {
+  width: 100%;
+  height: 75vh;
+
+  background-image: url(../assets/img/comeImg/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+/*********************************
+*             COME               *
+*********************************/
+
+.section-come {
+  padding: 10rem 3.2rem;
+}
+
+.come {
+  max-width: 153.6rem;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.come .section-headings-box h2:first-child {
+  margin-bottom: var(--space-sm);
+}
+
+.come .section-headings-box {
+  margin-bottom: var(--space-bg);
+}
+
+.come-1,
+.come-3,
+.come-5 {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  height: 60rem;
+
+  margin-bottom: var(--space-bg);
+}
+
+.come-5 {
+  margin-bottom: 0;
+}
+
+.come-img-box {
+  flex: 0 1 50%;
+  /* height: 37.08rem; */
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left center;
+}
+
+.come-img-1 {
+  background-image: url(../assets/img/comeImg/come-1.jpg);
+}
+
+.come-img-3 {
+  background-image: url(../assets/img/comeImg/come-3.jpg);
+}
+
+.come-img-5 {
+  background-image: url(../assets/img/comeImg/come-5.jpg);
+}
+
+.come-1 .come-text-box,
+.come-3 .come-text-box,
+.come-5 .come-text-box {
+  flex: 1 1 50%;
+  /* height: 36.8rem; */
+  height: 100%;
+  border: 1.5px solid var(--primary-color);
+  border-left: 0;
+
+  /* I make possible putting the text in the border */
+  position: relative;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+
+  padding: 0 5rem;
+}
+
+.come-text-box p:nth-child(3) {
+  color: #111;
+}
+
+.come-list {
+  text-align: left;
+  padding: 0 2.5rem;
+  list-style-type: disc;
+  color: var(--primary-color);
+  margin-bottom: var(--space-md);
+}
+
+.come-list-text {
+  color: #111;
+  font-size: clamp(1.6rem, 1.5185rem + 0.4013vw, 2rem);
+  margin-bottom: 1rem;
+}
+
+.icon-come {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+
+  margin-right: 1rem;
+}
+
+.car {
+  width: 4.8rem;
+  height: 4.2rem;
+  background-image: url(../assets/icons/car-svgrepo-com.svg);
+}
+
+.anchor {
+  width: 5rem;
+  height: 4.8rem;
+  background-image: url(../assets/icons/anchor-svgrepo-com.svg);
+}
+
+.bus {
+  width: 4.8rem;
+  height: 4.8rem;
+  background-image: url(../assets/icons/bus-svgrepo-com.svg);
+}
+
+.come .headings-box {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  margin-bottom: var(--space-md);
+
+  position: absolute;
+  top: -2.3rem;
+  transform: translate(-50%, 0);
+  left: 50%;
+
+  background-color: #fff;
+  padding: 0 1rem;
+}
+
+.heading-come {
+  font-size: clamp(1.8rem, 1.6777rem + 0.6019vw, 2.4rem);
+  color: #111;
+  font-weight: 500;
+}
+
+.text-come {
+  font-size: clamp(1.6rem, 1.5185rem + 0.4013vw, 2rem);
+  line-height: 1.4;
+  text-align: justify;
+  text-align-last: left;
+  padding: 0 1rem;
+
+  margin-bottom: var(--space-sm);
+}
+
+.text-come span {
+  font-weight: 500;
+}
+
+.btn-info {
+  text-align: left;
+  font-size: clamp(1.6rem, 1.5185rem + 0.4013vw, 2rem);
+  padding: 0 1rem;
+
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+
+  transition: all 0.3s;
+}
+
+.btn-info:hover {
+  color: #111;
+}
+
+.btn-info .icon-rarr {
+  margin-right: 1rem;
+  width: 2.2rem;
+  height: 2.2rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-image: url(../assets/icons/rigth-arr.svg);
+}
+
+.come-2,
+.come-4 {
+  display: flex;
+  flex-flow: row nowrap;
+
+  margin-bottom: var(--space-bg);
+}
+
+.come-2 .come-img-box,
+.come-4 .come-img-box {
+  flex: 1 1 55%;
+  height: 39.08rem;
+  background-size: cover;
+  background-position: right bottom;
+}
+
+.come-img-2 {
+  background-image: url(../assets/img/comeImg/railways.png);
+}
+
+.come-img-4 {
+  background-image: url(../assets/img/comeImg/airports.jpg);
+}
+
+.train {
+  background-image: url(../assets/icons/train-svgrepo-com.svg);
+  width: 4.8rem;
+  height: 4.8rem;
+}
+
+.plane {
+  background-image: url(../assets/icons/plane-svgrepo-com.svg);
+  width: 4.8rem;
+  height: 4.8rem;
+}
+
+.come-2 .come-text-box,
+.come-4 .come-text-box {
+  flex: 1 1 45%;
+
+  padding: 0 5rem;
+  border: 1.5px solid var(--primary-color);
+  border-right: 0;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+
+  /* I make possible putting the text in the border */
+  position: relative;
+}
+
+/*********************************
+*         PLANNING               *
+*********************************/
+
+.section-planning {
+  padding: 10rem 3.2rem;
+}
+
+.planning {
+  max-width: 153.6rem;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.planning .section-headings-box h2:first-child {
+  margin-bottom: var(--space-sm);
+}
+
+.planning .section-headings-box {
+  margin-bottom: var(--space-bg);
+  text-align: center;
+}
+
+.cards-box {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.box-1,
+.box-2 {
+  flex: 0 0 50%;
+
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+}
+
+.planning-card {
+  flex: 0 0 30rem;
+  height: 24rem;
+  border: 1px solid var(--primary-color);
+  padding: 2rem;
+}
+
+.heading-card-box {
+  display: flex;
+  align-items: center;
+  align-content: center;
+
+  margin-bottom: var(--space-sm);
+}
+
+.icon-card {
+  width: 4.8rem;
+  height: 4.8rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  margin-right: 1rem;
+}
+
+.planning-card .car {
+  background-image: url(../assets/icons/car.svg);
+}
+
+.planning-card .visa {
+  background-image: url(../assets/icons/visa.svg);
+}
+
+.planning-card .award {
+  background-image: url(../assets/icons/award.svg);
+}
+
+.planning-card .train {
+  background-image: url(../assets/icons/train.svg);
+}
+
+.heading-card {
+  font-size: clamp(2rem, 1.9185rem + 0.4013vw, 2.4rem);
+  color: #111;
+  font-weight: 500;
+}
+
+.text-card {
+  font-size: clamp(1.4rem, 1.3185rem + 0.4013vw, 1.8rem);
+  line-height: 1.2;
+  text-align: justify;
+  text-align-last: left;
+  margin-bottom: var(--space-md);
+}
+
+.btn-read {
+  font-size: clamp(1.4rem, 1.3185rem + 0.4013vw, 1.8rem);
+
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+.btn-read:hover {
+  color: #111;
+}
+
+.btn-read .icon-rarr {
+  margin-right: 1rem;
+  width: 2rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-image: url(../assets/icons/rigth-arr.svg);
+}
+
+/*********************************
+*         ACOMMODATIONS          *
+*********************************/
+
+.section-acommodation {
+  padding: 10rem 3.2rem;
+}
+
+.acommodation {
+  max-width: 153.6rem;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.acommodation .section-headings-box h2:first-child {
+  margin-bottom: var(--space-sm);
+}
+
+.acommodation .section-headings-box {
+  margin-bottom: var(--space-bg);
+}
+
+.aco-1 {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  justify-content: space-between;
+}
+
+.aco-hotels-box {
+  flex: 1 1 50%;
+}
+
+.aco-map-box {
+  flex: 1 1 50%;
+}
+
+.aco-hotels-box .options-box {
+  display: flex;
+  align-items: center;
+  align-content: center;
+
+  margin-bottom: var(--space-md);
+}
+
+.aco-hotels-box .option {
+  font-size: clamp(1.6rem, 1.5185rem + 0.4013vw, 2rem);
+  color: #111;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  border-bottom: 3px solid #aaa;
+}
+
+.aco-hotels-box .option:hover {
+  cursor: pointer;
+}
+
+.aco-hotels-box .active {
+  border-bottom: 3px solid var(--primary-color);
+}
+
+.results-box {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.result {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+
+  color: #111;
+  margin-bottom: var(--space-md);
+}
+
+.result-img-box {
+  flex: 0 1 20rem;
+  height: 20rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.result-img-1 {
+  background-image: url(../assets/img/comeImg/aco-1.jpg);
+}
+.result-img-2 {
+  background-image: url(../assets/img/comeImg/aco-2.jpg);
+}
+.result-img-3 {
+  background-image: url(../assets/img/comeImg/aco-4.jpg);
+}
+
+.result-content-box {
+  flex: 1 1 auto;
+  height: 20rem;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.content-1 {
+  flex: 0 1 50%;
+  height: 100%;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.content-2 {
+  flex: 0 1 50%;
+  height: 100%;
+  padding: 1rem;
+
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.result-name {
+  font-size: clamp(1.6rem, 1.5185rem + 0.4013vw, 2rem);
+  font-weight: 500;
+}
+
+.provider-box {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.icon-verified {
+  flex: 0 0 2rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-image: url(../assets/icons/verified-check-svgrepo-com.svg);
+}
+
+.provider-img {
+  flex: 0 0 9.3rem;
+  height: 4rem;
+  margin-top: 0.4rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-image: url(../assets/icons/booking-ar21.svg);
+}
+
+.price {
+  font-size: clamp(1.8rem, 1.6777rem + 0.6019vw, 2.4rem);
+  font-weight: 500;
+}
+
+.btn-deal {
+  width: fit-content;
+  font-size: clamp(1.6rem, 1.5185rem + 0.4013vw, 2rem);
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 0.5rem 3rem;
+  transition: all 0.3s;
+}
+
+.btn-deal:hover {
+  background-color: #ac0606;
+}
+
+.stars-box {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-bottom: var(--space-sm);
+}
+
+.icon-star {
+  width: 3rem;
+  height: 3rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-image: url(../assets/icons/star-filled-svgrepo-com.svg);
+}
+
+.icon-text {
+  margin-top: 0.7rem;
+  font-size: clamp(1.2rem, 1.1185rem + 0.4013vw, 1.6rem);
+  color: #555;
+}
+
+.contains-box {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.icon-box {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+.contains-box .icon {
+  margin-right: 1rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.contains-box .icon-wifi {
+  background-image: url(../assets/icons/wifi-svgrepo-com.svg);
+}
+
+.contains-box .icon-restaurant {
+  margin-top: 1rem;
+  background-image: url(../assets/icons/fork-knife-spoon-svgrepo-com.svg);
+}
+
+.contains-box .icon-parking {
+  margin-top: 1rem;
+  background-image: url(../assets/icons/parking-svgrepo-com.svg);
+}
+
+.contains-box .icon-pool {
+  margin-top: 1rem;
+  background-image: url(../assets/icons/swimming-svgrepo-com.svg);
+}
+
+.pagination {
+  margin-top: var(--space-md);
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.pagination .number {
+  font-size: clamp(1rem, 0.837rem + 0.8025vw, 1.8rem);
+  padding: 0.5rem 1rem;
+  border: 1px solid #555;
+  margin-right: 1rem;
+  transition: all 0.3s;
+}
+
+.pagination .dots {
+  margin-right: 1rem;
+  font-size: 1.8rem;
+  padding: 0.5rem 1rem;
+}
+
+.pagination .dots:hover {
+  cursor: default;
+}
+
+.pagination .page:hover .number {
+  cursor: pointer;
+  background-color: #ddd;
+}
+
+.pagination .icon {
+  padding: 0.5rem 1rem;
+  width: 3rem;
+  height: 3rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.pagination .icon:hover {
+  cursor: pointer;
+}
+
+.icon-chev-left {
+  background-image: url(../assets/icons/chevron-left-svgrepo-com.svg);
+}
+
+.icon-chev-right {
+  background-image: url(../assets/icons/chevron-right-svgrepo-com.svg);
+}
+
+/*********************************
+*              BEST              *
+*********************************/
+.section-best {
+  padding: 10rem 3.2rem;
+}
+
+.best {
+  max-width: 153.6rem;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.best .section-headings-box h2:first-child {
+  margin-bottom: var(--space-sm);
+}
+
+.best .section-headings-box {
+  margin-bottom: var(--space-bg);
+}
+
+.best {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  align-content: center;
+  justify-content: space-evenly;
+}
+
+.best-img-box {
+  flex: 0 1 60rem;
+  height: 60rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-image: url(../assets/img/comeImg/winners.jpg);
+}
+
+.best-text-box {
+  flex: 0 1 400px;
+
+  padding: 7rem;
+  border: 1px solid var(--primary-color);
+}
+
+.text-best {
+  font-size: clamp(2rem, 1.9185rem + 0.4013vw, 2.4rem);
+  line-height: 1.3;
+  font-weight: 500;
+  margin-bottom: var(--space-md);
+  max-width: 90%;
+}
+
+.btn-best {
+  font-size: 2rem;
+  color: #555;
+  border: 1px solid #555;
+  padding: 0.5rem 3rem;
+  transition: all 0.3s;
+}
+
+.btn-best:hover {
+  background-color: #ddd;
+}
+
+/*********************************
+*          COME QUERIES          *
+*********************************/
+
+@media screen and (max-width: 1500px) {
+  .box-1 {
+    justify-content: flex-end;
+    margin-right: var(--space-sm);
+  }
+
+  .box-2 {
+    justify-content: flex-start;
+  }
+
+  .box-1 .planning-card:first-child,
+  .box-2 .planning-card:first-child {
+    margin-bottom: var(--space-sm);
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .come-1 .come-text-box,
+  .come-3 .come-text-box,
+  .come-5 .come-text-box,
+  .come-2 .come-text-box,
+  .come-4 .come-text-box {
+    padding: 0 1rem;
+  }
+
+  .come-2 .come-img-box,
+  .come-4 .come-img-box {
+    height: 33rem;
+  }
+
+  /* BEST */
+  .best-text-box {
+    padding: 3rem;
+  }
+
+  .best-img-box {
+    flex: 0 1 50rem;
+    height: 50rem;
+  }
+
+  /* ACOMMODATIONS */
+  .aco-1 {
+    flex-wrap: wrap;
+  }
+
+  .aco-map-box {
+    flex: 0 0 100%;
+    margin-top: var(--space-md);
+  }
+
+  .options-box {
+    max-width: 80rem;
+    margin: 0 auto;
+  }
+
+  .results-box {
+    max-width: 80rem;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .come-2 .come-img-box,
+  .come-4 .come-img-box {
+    height: 40rem;
+  }
+
+  /* BEST */
+  .best-text-box {
+    border: none;
+  }
+
+  .best-img-box {
+    flex: 0 1 40rem;
+    height: 40rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    text-align: center;
+  }
+
+  .heading-secondary {
+    /* I make possible gradient text */
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 1) 43%,
+      rgba(196, 7, 7, 1) 55%
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* COME */
+
+  .come-1,
+  .come-3,
+  .come-5,
+  .come-2,
+  .come-4 {
+    flex-wrap: wrap;
+    margin-bottom: var(--space-bg);
+  }
+
+  .come-1,
+  .come-3,
+  .come-5 {
+    height: 45rem;
+  }
+
+  .come-1 .come-text-box,
+  .come-3 .come-text-box,
+  .come-5 .come-text-box {
+    height: 35rem;
+    border: 1px solid var(--primary-color);
+    border-top: none;
+  }
+
+  .come-2 .come-img-box,
+  .come-4 .come-img-box {
+    order: 1;
+    margin-top: 45rem;
+    /* width: 100%; */
+    background-size: contain;
+  }
+
+  .come-4 .come-img-box {
+    background-size: cover;
+  }
+
+  .come-2 .come-text-box,
+  .come-4 .come-text-box {
+    order: 2;
+    height: 30rem;
+    border: 1px solid var(--primary-color);
+    border-top: none;
+  }
+
+  .come-img-box {
+    flex: 0 0 100%;
+  }
+
+  .come-1 .come-text-box,
+  .come-3 .come-text-box,
+  .come-5 .come-text-box,
+  .come-2 .come-text-box,
+  .come-4 .come-text-box {
+    flex: 1 1 100%;
+  }
+
+  /* PLANNING */
+  .section-planning {
+    margin-top: 30rem;
+  }
+
+  /* BEST */
+  .best {
+    flex-wrap: wrap;
+  }
+
+  .best-text-box {
+    margin-bottom: var(--space-md);
+  }
+
+  /* ACOMMODATIONS */
+  .content-1 {
+    flex: 0 1 60%;
+  }
+
+  .content-2 {
+    flex: 0 1 30%;
+
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  /* PLANNING */
+  .cards-box {
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  .box-1,
+  .box-2 {
+    flex: 0 0 70%;
+  }
+
+  .box-1 {
+    margin-bottom: var(--space-sm);
+    margin-right: 0;
+    justify-content: center;
+  }
+
+  .box-2 {
+    justify-content: center;
+  }
+
+  .planning-card {
+    height: 20rem;
+    margin-bottom: var(--space-sm);
+  }
+}
+
+@media screen and (max-width: 650px) {
+  /* COME */
+  .come-4 .come-img-box {
+    background-size: contain;
+  }
+
+  .come-2 .come-img-box,
+  .come-4 .come-img-box {
+    margin-top: 25rem;
+  }
+
+  /* ACCOMMODATIONS */
+  .result-content-box {
+    height: 15rem;
+  }
+
+  .result-img-box {
+    flex: 0 1 15rem;
+    height: 15rem;
+  }
+
+  .pagination {
+    margin-top: var(--space-sm);
+  }
+
+  .results-box .result:nth-child(2) .icon-box:nth-child(3) .icon-text,
+  .results-box .result:nth-child(2) .icon-box:nth-child(3) .icon,
+  .results-box .result:nth-child(2) .icon-box:nth-child(4) .icon-text,
+  .results-box .result:nth-child(2) .icon-box:nth-child(4) .icon {
+    display: none;
+  }
+
+  .results-box .result:nth-child(2) .icon-box:nth-child(3)::after {
+    content: '...';
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .come-1 .come-text-box,
+  .come-3 .come-text-box,
+  .come-5 .come-text-box,
+  .come-2 .come-text-box,
+  .come-4 .come-text-box {
+    height: 40rem;
+  }
+
+  /* ACCOMMODATIONS */
+  .aco-1 .icon-star {
+    width: 2rem;
+    height: 2rem;
+  }
+  .aco-1 .icon {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+
+  .aco-hotels-box .options-box {
+    flex-flow: row wrap;
+  }
+
+  .btn-deal {
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section-hero {
+    background-position: -67rem center;
+  }
+
+  .section-come,
+  .section-acommodation,
+  .section-best {
+    padding: 3.2rem 1rem;
+  }
+
+  .section-planning {
+    padding: 3.2rem 1rem;
+    margin-top: 20rem;
+  }
+
+  .section-headings-box {
+    margin-bottom: var(--space-md) !important;
+  }
+
+  /* COME */
+  .come-2 .come-img-box,
+  .come-4 .come-img-box {
+    margin-top: 5rem;
+  }
+
+  .come-1 .come-text-box,
+  .come-3 .come-text-box,
+  .come-5 .come-text-box {
+    height: 45rem;
+  }
+
+  .come-img-box {
+    height: 50%;
+  }
+
+  .come-3 .come-img-box {
+    background-position: center -5rem;
+  }
+
+  .text-come {
+    padding: 0;
+  }
+
+  .come .btn-info {
+    padding: 0;
+  }
+
+  /* BEST */
+  .best-img-box {
+    flex: 0 0 100%;
+  }
+
+  /* ACOMMODATIONS */
+  .result {
+    flex-flow: row wrap;
+  }
+
+  .result-img-box {
+    flex: 1 1 100%;
+    height: 25rem;
+  }
+
+  .result-content-box {
+    padding: 1rem 0;
+    border: 1px solid #555;
+    border-top: none;
+  }
+
+  .content-1 {
+    flex: 0 1 50%;
+  }
+
+  .content-2 {
+    flex: 0 1 50%;
+  }
+
+  .results-box .result:nth-child(2) .icon-box:nth-child(3) .icon-text,
+  .results-box .result:nth-child(2) .icon-box:nth-child(3) .icon,
+  .results-box .result:nth-child(2) .icon-box:nth-child(4) .icon-text,
+  .results-box .result:nth-child(2) .icon-box:nth-child(4) .icon {
+    display: block;
+  }
+
+  .results-box .result:nth-child(2) .icon-box:nth-child(3)::after {
+    content: '';
+  }
+
+  /* ACCOMMODATIONS */
+  .aco-1 .icon-star {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+
+  .btn-deal {
+    padding: 0.5rem 2rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  /* COME */
+  .come-2 .come-img-box,
+  .come-4 .come-img-box {
+    margin-top: 0;
+  }
+}
