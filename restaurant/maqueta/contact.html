@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kaneda</title>
+    <link rel="icon" href="./assets/icons/cherry-tree.png" />
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li>
+            <a class="nav-link" href="./index.html">HOME&nbsp;&nbsp;&nbsp;</a>
+            <div class="nav-mobile-icon"></div>
+          </li>
+          <li>
+            <a class="nav-link" href="./team.html">TEAM&nbsp;&nbsp;&nbsp;</a>
+            <div class="nav-mobile-icon"></div>
+          </li>
+          <li>
+            <a class="nav-link" href="./specialities.html"
+              >OUR SPECIALITIES &nbsp;&nbsp;&nbsp;</a
+            >
+            <div class="nav-mobile-icon"></div>
+          </li>
+          <li class="active">
+            <a class="nav-link active" href="./contact.html">CONTACT</a>
+            <div class="nav-mobile-icon"></div>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="btn-mobile-nav">
+        <img
+          class="icon-mobile-nav icon-menu"
+          src="./assets/icons/menu-1-svgrepo-com.svg"
+          alt=""
+        />
+        <img
+          class="icon-mobile-nav icon-close"
+          name="icon-close"
+          src="./assets/icons/close-svgrepo-com.svg"
+          alt=""
+        />
+      </button>
+    </header>
+
+    <main>
+      <!----- SECTION HERO ----->
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero-headings-box">
+            <h2 class="heading-hero-jp">私たちの専門分野</h2>
+            <h2 class="heading-hero">Our Specialities</h2>
+          </div>
+        </div>
+      </section>
+      <!----- END SECTION HERO ----->
+      <!----- SECTION MAP ----->
+      <section class="section-map">
+        <div class="map"></div>
+      </section>
+      <!----- END SECTION MAP ----->
+      <!----- SECTION TOUCH ----->
+      <section class="section-touch">
+        <div class="touch">
+          <div class="headings-box margin-bottom-bg">
+            <h2 class="heading-primary-jp margin-bottom-sm">連絡する</h2>
+            <h2 class="heading-primary">Get in touch</h2>
+          </div>
+          <div class="touch-1">
+            <div class="touch-info-box">
+              <div class="contact-box">
+                <div class="contact-icon-box">
+                  <div class="icon-contact icon-contact-location"></div>
+                  <p class="text-contact">
+                    1 Takashimachō, Fuji, Shizuoka 417-0048, Japan
+                  </p>
+                </div>
+                <div class="contact-icon-box">
+                  <div class="icon-contact icon-contact-phone"></div>
+                  <p class="text-contact">0123-456-7890</p>
+                </div>
+                <div class="contact-icon-box">
+                  <div class="icon-contact icon-contact-mail"></div>
+                  <p class="text-contact">Closed on modays</p>
+                </div>
+              </div>
+              <ul class="open-list">
+                <li>Opening Hours</li>
+                <li>Tuesday: 12:30 - 16:30 | 20:00 - 23:00</li>
+                <li>Wednesday: 12:30 - 16:30 | 20:00 - 23:00</li>
+                <li>Thurdsday: 12:30 - 16:30 | 20:00 - 23:00</li>
+                <li>Friday: 12:30 - 16:30 | 20:00 - 00:00</li>
+                <li>Saturday: 12:30 - 16:30 | 20:00 - 00:00</li>
+                <li>Sunday: 12:30 - 16:30 | 20:00 - 00:00</li>
+              </ul>
+            </div>
+            <div class="touch-form-box">
+              <div class="headings-box margin-bottom-bg">
+                <h3 class="heading-secondary-jp margin-bottom-sm">教えて</h3>
+                <h3 class="heading-secondary">Tell us what you think</h3>
+              </div>
+              <form class="contact-form">
+                <label for="name">Name*</label>
+                <input type="text" name="name" />
+                <label for="email">Email*</label>
+                <input type="text" name="email" />
+                <label for="name">Affair*</label>
+                <input type="text" name="name" />
+                <label for="message">Message</label>
+                <textarea name="message" cols="30" rows="10"></textarea>
+                <input type="submit" value="Send" class="btn btn-send" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!----- END SECTION TOUCH ----->
+      <!----- SECTION RESERVE ----->
+      <section class="section-reserve">
+        <div class="reserve">
+          <div class="table-box">
+            <h3 class="heading-secondary margin-bottom-md">Select a table</h3>
+            <div class="map-box"></div>
+          </div>
+          <div class="date-box">
+            <div class="month-box">
+              <h3 class="heading-secondary margin-bottom-md">
+                Select a date and time
+              </h3>
+              <div class="date-month">
+                <ul>
+                  <li class="previous">&#10094;</li>
+                  <li>November<br /></li>
+                  <li class="next">&#10095;</li>
+                </ul>
+              </div>
+            </div>
+
+            <table>
+              <tr>
+                <td>Mon</td>
+                <td>Tue</td>
+                <td>Wed</td>
+                <td>Thu</td>
+                <td>Fri</td>
+                <td>Sat</td>
+                <td>Sun</td>
+              </tr>
+              <tr>
+                <td><span>&nbsp;</span></td>
+                <td><span>&nbsp;</span></td>
+                <td><span class="passed">1</span></td>
+                <td><span class="passed">2</span></td>
+                <td><span class="passed">3</span></td>
+                <td><span class="passed">4</span></td>
+                <td><span class="passed">5</span></td>
+              </tr>
+              <tr>
+                <td><span class="passed">6</span></td>
+                <td><span class="passed">7</span></td>
+                <td><span class="passed">8</span></td>
+                <td><span class="passed">9</span></td>
+                <td><span class="passed">10</span></td>
+                <td><span class="passed">11</span></td>
+                <td><span class="passed">12</span></td>
+              </tr>
+              <tr>
+                <td><span class="passed">13</span></td>
+                <td><span>14</span></td>
+                <td><span>15</span></td>
+                <td><span>16</span></td>
+                <td><span>17</span></td>
+                <td><span>18</span></td>
+                <td><span>19</span></td>
+              </tr>
+              <tr>
+                <td><span>20</span></td>
+                <td><span class="selected">21</span></td>
+                <td><span>22</span></td>
+                <td><span>23</span></td>
+                <td><span>24</span></td>
+                <td><span>25</span></td>
+                <td><span>26</span></td>
+              </tr>
+              <tr>
+                <td><span>27</span></td>
+                <td><span>28</span></td>
+                <td><span>29</span></td>
+                <td><span>30</span></td>
+                <td><span>&nbsp;</span></td>
+                <td><span>&nbsp;</span></td>
+                <td><span>&nbsp;</span></td>
+              </tr>
+            </table>
+
+            <ul class="hours-list margin-bottom-md">
+              <li class="hour">12:30</li>
+              <li class="hour">13:30</li>
+              <li class="hour">14:30</li>
+              <li class="hour">15:30</li>
+              <li class="hour selected">20:00</li>
+              <li class="hour">21:00</li>
+              <li class="hour">22:00</li>
+              <li class="hour">23:00</li>
+            </ul>
+
+            <button class="btn btn-reserve" href="./contact.html">
+              Reserve
+            </button>
+          </div>
+        </div>
+      </section>
+      <!----- END SECTION RESERVE ----->
+    </main>
+    <footer>
+      <div class="cols-box">
+        <div class="logo-col">
+          <div class="logo-box margin-bottom-md">
+            <div class="logo"></div>
+            <div class="logo-text-box">
+              <p class="text-jp">金田</p>
+              <p class="text-main">KANEDA</p>
+              <p class="text-sec">Restaurant</p>
+            </div>
+          </div>
+
+          <ul class="social-list">
+            <li>
+              <a href="#" class="social-link"
+                ><div class="icon icon-inst"></div
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="social-link"
+                ><div class="icon icon-x"></div
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="social-link"
+                ><div class="icon icon-trip"></div
+              ></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="other-cols">
+          <div class="contact-col">
+            <p class="footer-heading margin-bottom-sm">Contact us</p>
+            <div class="footer-info-box margin-bottom-sm">
+              <div class="icon-info icon-info-closed"></div>
+              <p class="text-info">Closed on modays</p>
+            </div>
+            <div class="footer-info-box margin-bottom-sm">
+              <div class="icon-info icon-info-location"></div>
+              <p class="text-info">
+                1 Takashimachō, Fuji, Shizuoka 417-0048, Japan
+              </p>
+            </div>
+            <div class="footer-info-box">
+              <div class="icon-info icon-info-phone"></div>
+              <p class="text-info">0123-456-7890</p>
+            </div>
+          </div>
+          <nav class="company-col">
+            <p class="footer-heading margin-bottom-sm">Company</p>
+            <ul class="footer-nav">
+              <li class="margin-bottom-sm">
+                <a href="#" class="footer-link">About Kaneda</a>
+              </li>
+              <li class="margin-bottom-sm">
+                <a href="#" class="footer-link">Ingredients suppliers</a>
+              </li>
+              <li class="margin-bottom-sm">
+                <a href="#" class="footer-link">Careers</a>
+              </li>
+            </ul>
+          </nav>
+          <nav class="useful-col">
+            <p class="footer-heading margin-bottom-sm">Useful links</p>
+            <ul class="footer-nav">
+              <li class="margin-bottom-sm">
+                <a href="#" class="footer-link">Cookies policy</a>
+              </li>
+              <li class="margin-bottom-sm">
+                <a href="#" class="footer-link">Privacy policy</a>
+              </li>
+              <li class="margin-bottom-sm">
+                <a href="#" class="footer-link">Terms of service</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="copy-box">
+        <p class="copy-text">© KANEDA RESTAURANT. All rights reserved</p>
+      </div>
+    </footer>
+    <script>
+      // function scrollDownOnArrowDown(event) {
+      //   window.scroll({
+      //     top: 8000,
+      //     left: 0,
+      //     behavior: 'smooth',
+      //   });
+      // }
+
+      // // // Agregar un event listener para el evento de tecla presionada
+      // document.addEventListener('click', scrollDownOnArrowDown);
+
+      // mobile navigation
+      const btnMobileEl = document.querySelector('.btn-mobile-nav');
+      const headerEl = document.querySelector('header');
+      const htmlEl = document.querySelector('html');
+
+      btnMobileEl.addEventListener('click', function () {
+        headerEl.classList.toggle('nav-open');
+        htmlEl.classList.toggle('disable-scroll');
+      });
+    </script>
+  </body>
+</html>

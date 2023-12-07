@@ -1,0 +1,701 @@
+/*********************************
+*         SECTION HERO           *
+*********************************/
+
+.section-hero {
+  width: 100%;
+}
+
+.hero {
+  height: 80vh;
+
+  background-image: url(../assets/img/specialitiesImg/hero-specialities.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.hero-headings-box {
+  display: flex;
+}
+
+.hero-headings-box h2:first-child {
+  margin-right: var(--space-sm);
+}
+
+/*********************************
+*       SECTION TASTING          *
+*********************************/
+
+.section-tasting {
+  padding: 10rem 3.2rem;
+}
+
+.tasting {
+  max-width: 130rem;
+  margin: 0 auto;
+}
+
+.tasting-1 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.tasting-list {
+  margin-left: 2rem;
+  list-style-type: disc;
+  color: var(--secondary-color);
+  font-size: clamp(1.4rem, 1.3102rem + 0.5749vw, 2rem);
+}
+
+.tasting-plate {
+  margin-bottom: 2rem;
+  color: var(--main-color);
+}
+
+.tasting-1 .tasting-img-box {
+  flex: 0 0 45%;
+  height: 36rem;
+  background-image: url(../assets/img/specialitiesImg/right-cards.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  align-self: flex-end;
+}
+
+.tasting-2 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.tasting-2 .tasting-img-box {
+  flex: 0 0 45%;
+  height: 36rem;
+  background-image: url(../assets/img/specialitiesImg/left-cards.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  align-self: flex-end;
+}
+
+/*********************************
+*          SECTION MAIN          *
+*********************************/
+
+.section-main-courses {
+  padding: 10rem 3.2rem;
+}
+
+.main-courses {
+  max-width: 130rem;
+  margin: 0 auto;
+}
+
+.main {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.main-list {
+  font-size: clamp(1.4rem, 1.3102rem + 0.5749vw, 2rem);
+}
+
+.main-list span {
+  color: var(--secondary-color);
+}
+
+.plate {
+  margin-bottom: var(--space-sm);
+  color: var(--main-color);
+  line-height: 1.2;
+}
+
+.plate-desc {
+  margin-bottom: 2rem;
+  margin-bottom: var(--space-md);
+  color: var(--text-grey);
+  line-height: 1.2;
+}
+
+.main-text-box {
+  flex: 0 0 45%;
+}
+
+.main-img-box {
+  flex: 0 0 45%;
+  height: 36rem;
+  background-image: url(../assets/img/specialitiesImg/main-course.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+}
+
+.pagination {
+  /* border: var(--div-red); */
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(--space-sm);
+}
+
+.page {
+  flex: 0 0 15%;
+  height: 0.5rem;
+  background-color: #fff;
+  cursor: pointer;
+  margin-right: var(--space-sm);
+}
+
+.page-active {
+  background: #403c36;
+}
+
+/*********************************
+*         SECTION SUSHI          *
+*********************************/
+
+.section-sushi {
+  padding: 10rem 3.2rem;
+}
+
+.sushi {
+  max-width: 130rem;
+  margin: 0 auto;
+}
+
+.sushi h2 {
+  text-align: center;
+}
+
+.sushi .plate {
+  margin-bottom: var(--space-md);
+}
+
+.nigiri {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.nigiri-img-box {
+  flex: 0 0 45%;
+  height: 90rem;
+
+  background-image: url(../assets/img/specialitiesImg/nigiri.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.nigiri-img-box .img-name {
+  font-size: clamp(1.4rem, 1.1605rem + 1.5329vw, 3rem);
+  margin-top: var(--space-md);
+}
+
+.nigiri .page {
+  flex: 0 0 10%;
+}
+
+.others {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.others-img-box {
+  flex: 0 0 45%;
+  height: 90rem;
+
+  background-image: url(../assets/img/specialitiesImg/uramaki.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+}
+
+.nigiri .img-name {
+  font-size: clamp(1.4rem, 1.1605rem + 1.5329vw, 3rem);
+  font-weight: var(--fw-light);
+  margin-top: var(--space-md);
+}
+
+.nigiri .page {
+  flex: 0 0 10%;
+}
+
+/*********************************
+*         SECTION DRINKS         *
+*********************************/
+
+.section-drinks {
+  padding: 10rem 3.2rem;
+}
+
+.drinks {
+  max-width: 130rem;
+  margin: 0 auto;
+}
+
+.wines,
+.sake {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.wines-img-box {
+  flex: 0 0 45%;
+  height: 90rem;
+
+  background-image: url(../assets/img/specialitiesImg/wines.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.wines-text-box {
+  flex: 0 0 50%;
+}
+
+.sake-text-box {
+  flex: 0 0 50%;
+}
+
+.sake-img-box {
+  flex: 0 0 45%;
+  height: 90rem;
+
+  background-image: url(../assets/img/specialitiesImg/sake.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.sake .main-list li {
+  margin-bottom: var(--space-md);
+}
+
+/*********************************
+*         SECTION DESSERTS       *
+*********************************/
+
+.section-desserts {
+  padding: 10rem 3.2rem;
+}
+
+.desserts {
+  max-width: 130rem;
+  margin: 0 auto;
+}
+
+.desserts h2 {
+  text-align: center;
+}
+
+.desserts-1 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.desserts-img-box {
+  flex: 0 0 45%;
+  height: 66rem;
+
+  background-image: url(../assets/img/specialitiesImg/postre.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+}
+
+.desserts-img-box .pagination {
+  justify-content: flex-end;
+}
+
+.desserts-text-box {
+  flex: 0 0 50%;
+}
+
+.alergens-box {
+  margin-top: var(--space-bg);
+  padding: 3rem 1rem;
+  border: 1px solid #fff;
+}
+
+.alergens-text {
+  text-align: center;
+  font-size: clamp(0.8rem, 0.6802rem + 0.7665vw, 1.6rem);
+  line-height: 1.2;
+  color: #fff;
+}
+
+/*********************************
+*      SPECIALITIES QUERIES      *
+*********************************/
+
+@media only screen and (max-width: 1080px) {
+  /* TASTING */
+  .tasting-1 .tasting-text-box,
+  .tasting-2 .tasting-text-box {
+    flex: 0 0 42rem;
+  }
+
+  /* MAIN */
+  .main .main-text-box {
+    flex: 0 0 42rem;
+  }
+
+  /* SUSHI */
+  .nigiri .nigiri-text-box {
+    flex: 0 0 42rem;
+  }
+
+  /* DRINKS */
+  .wines-text-box {
+    flex: 0 0 42rem;
+  }
+
+  .sake-text-box {
+    flex: 0 0 42rem;
+  }
+
+  /* DESSERTS */
+  .main .main-text-box {
+    flex: 0 0 42rem;
+  }
+}
+
+@media only screen and (max-width: 830px) {
+  .section-tasting,
+  .section-main-courses,
+  .section-sushi,
+  .section-drinks,
+  .section-desserts {
+    padding: 5rem 1rem;
+  }
+
+  .section-tasting .headings-box:first-child,
+  .section-main-courses .headings-box:first-child,
+  .section-sushi .headings-box:first-child,
+  .section-drinks .headings-box:first-child,
+  .section-desserts .headings-box:first-child {
+    margin-bottom: var(--space-md);
+  }
+
+  .section-tasting h2,
+  .section-main-courses h2,
+  .section-drinks h2 {
+    text-align: center;
+  }
+
+  /* TASTING */
+  .tasting-1,
+  .tasting-2 {
+    padding: 2.5rem 0;
+    margin-bottom: 0;
+
+    justify-content: center;
+  }
+
+  .tasting-1 .tasting-img-box,
+  .tasting-2 .tasting-img-box {
+    flex: 0 0 80%;
+    margin-bottom: var(--space-md);
+  }
+
+  .tasting-1 .tasting-text-box,
+  .tasting-2 .tasting-text-box {
+    flex: 0 0 80%;
+
+    margin-bottom: var(--space-md);
+  }
+
+  .tasting-2 .tasting-img-box {
+    order: 2;
+  }
+
+  .tasting-2 .tasting-text-box {
+    order: 1;
+  }
+
+  /* MAIN */
+  .main {
+    padding: 2.5rem 0;
+    margin-bottom: 0;
+
+    justify-content: center;
+  }
+
+  .main .main-img-box {
+    flex: 0 0 80%;
+    margin-bottom: var(--space-md);
+  }
+
+  .main .main-text-box {
+    flex: 0 0 80%;
+
+    margin-bottom: var(--space-md);
+  }
+
+  /* SUSHI */
+  .nigiri,
+  .others {
+    padding: 2.5rem 0;
+    margin-bottom: 0;
+
+    justify-content: center;
+  }
+
+  .nigiri .nigiri-img-box,
+  .others .others-img-box {
+    flex: 0 0 70%;
+    height: 60rem;
+
+    margin-bottom: var(--space-md);
+  }
+
+  .nigiri .nigiri-text-box,
+  .others .others-text-box {
+    flex: 0 0 70%;
+
+    margin-bottom: var(--space-md);
+  }
+
+  .others .others-img-box {
+    order: 2;
+  }
+
+  .others .others-text-box {
+    order: 1;
+  }
+
+  /* DRINKS */
+  .wines,
+  .sake {
+    padding: 2.5rem 0;
+    margin-bottom: 0;
+
+    justify-content: center;
+  }
+
+  .wines-img-box,
+  .sake-img-box {
+    flex: 0 0 70%;
+    height: 60rem;
+
+    margin-bottom: var(--space-md);
+  }
+
+  .wines-text-box,
+  .sake-text-box {
+    flex: 0 0 70%;
+
+    margin-bottom: var(--space-md);
+  }
+
+  .sake-img-box {
+    order: 2;
+  }
+
+  .sake-text-box {
+    order: 1;
+  }
+
+  /* MAIN */
+  .desserts-1 {
+    padding: 2.5rem 0;
+    margin-bottom: 0;
+
+    justify-content: center;
+  }
+
+  .desserts-img-box {
+    flex: 0 0 80%;
+    margin-bottom: var(--space-md);
+  }
+
+  .desserts-text-box {
+    flex: 0 0 80%;
+
+    margin-bottom: var(--space-md);
+  }
+
+  .alergens-box {
+    margin-top: var(--space-sm);
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  /* TASTING */
+  .tasting-2 {
+    padding: 0;
+  }
+
+  .tasting-1 .tasting-img-box,
+  .tasting-2 .tasting-img-box {
+    height: 32rem;
+    margin: 0;
+  }
+
+  .tasting-1 .tasting-text-box,
+  .tasting-2 .tasting-text-box {
+    flex: 0 0 100%;
+  }
+
+  /* MAIN */
+  .main .main-img-box {
+    flex: 0 0 100%;
+    margin: 0;
+  }
+
+  .main .main-text-box {
+    flex: 0 0 100%;
+  }
+
+  /* SUSHI */
+  .others {
+    padding: 0;
+  }
+
+  .others .others-img-box {
+    flex: 0 0 100%;
+    height: 43em;
+    margin: 0;
+
+    background-position: bottom;
+  }
+
+  .nigiri .nigiri-img-box {
+    flex: 0 0 100%;
+    height: 43em;
+    margin: 0;
+  }
+
+  .nigiri .nigiri-text-box,
+  .others .others-text-box {
+    flex: 0 0 100%;
+  }
+
+  /* DRINKS */
+  .sake {
+    padding: 0;
+  }
+
+  .wines-img-box,
+  .sake-img-box {
+    flex: 0 0 100%;
+    height: 43em;
+    margin: 0;
+
+    background-position: bottom;
+  }
+
+  .wines-text-box,
+  .sake-text-box {
+    flex: 0 0 100%;
+  }
+
+  /* DESSERTS */
+  .desserts-img-box {
+    flex: 0 0 100%;
+    height: 33rem;
+  }
+
+  .desserts-text-box {
+    flex: 0 0 100%;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .section-tasting,
+  .section-main-courses,
+  .section-sushi,
+  .section-drinks {
+    padding: 2.5rem 1rem;
+  }
+
+  /* HERO */
+  .hero {
+    height: 60vh;
+  }
+
+  /* TASTING */
+  .tasting-1 .tasting-img-box,
+  .tasting-2 .tasting-img-box {
+    height: 18rem;
+  }
+
+  /* MAIN */
+  .main-img-box {
+    height: 22rem;
+  }
+
+  /* SUSHI */
+  .nigiri .nigiri-img-box,
+  .others .others-img-box {
+    height: 32rem;
+  }
+
+  .nigiri .nigiri-text-box,
+  .others .others-text-box {
+    margin-bottom: var(--space-sm);
+  }
+
+  /* SUSHI */
+  .wines-img-box,
+  .sake-img-box {
+    height: 32rem;
+  }
+
+  .wines-text-box,
+  .sake-text-box {
+    margin-bottom: var(--space-sm);
+  }
+
+  /* DESSERTS */
+  .desserts-img-box {
+    height: 25rem;
+  }
+}

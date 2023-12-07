@@ -1,0 +1,667 @@
+/*********************************
+*         SECTION HERO           *
+*********************************/
+
+.section-hero {
+  width: 100%;
+}
+
+.hero {
+  height: 80vh;
+
+  background-image: url(../assets/img/teamImg/hero-team.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.hero-headings-box {
+  display: flex;
+}
+
+.hero-headings-box h2:first-child {
+  margin-right: var(--space-sm);
+}
+
+/*********************************
+*         SECTION CHEF           *
+*********************************/
+.section-chef {
+  padding: 10rem 3.2rem;
+}
+
+.chef {
+  max-width: 130rem;
+  margin: 0 auto;
+}
+
+.chef-1,
+.chef-2,
+.chef-3 {
+  padding: 7.5rem 0rem;
+}
+
+.chef-1 {
+  padding-top: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+}
+
+.chef-1 .chef-img-box {
+  flex: 0 0 45%;
+  height: 30rem;
+  background-image: url(../assets/img/teamImg/chef-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.chef-1 .chef-text-box {
+  flex: 0 0 50rem;
+  padding: 0 2.5rem;
+}
+
+.chef-text-box .headings-box {
+  display: flex;
+  align-items: flex-end;
+  align-content: flex-end;
+  /* justify-content: center; */
+}
+
+.heading-number {
+  font-size: clamp(3rem, 2.3713rem + 4.024vw, 7.2rem);
+  font-weight: var(--fw-light);
+  font-family: var(--tertiary-font);
+
+  margin-right: var(--space-sm);
+}
+
+.chef-text {
+  font-weight: var(--fw-light);
+  font-size: clamp(1.2rem, 1.0802rem + 0.7665vw, 2rem);
+  line-height: 1.5;
+  text-align: justify;
+  text-align-last: left;
+  max-width: 50rem;
+}
+
+.chef-text span {
+  font-weight: var(--fw-bold);
+}
+
+.chef-2 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+}
+
+.chef-2 .chef-img-box {
+  flex: 0 0 45%;
+  height: 36rem;
+  background-image: url(../assets/img/teamImg/chef-2.jpg);
+  background-repeat: no-repeat;
+  background-position: center start;
+  background-size: cover;
+}
+
+.chef-2 .chef-text-box {
+  flex: 0 0 50rem;
+  padding: 0 2.5rem;
+}
+
+.chef-3 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+}
+
+.chef-3 .chef-img-box {
+  flex: 0 0 45%;
+  height: 30rem;
+  background-image: url(../assets/img/teamImg/chef-3.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.btn-learn {
+  margin-top: var(--space-sm);
+  font-size: clamp(1.2rem, 1.0802rem + 0.7665vw, 2rem);
+  padding: 1rem 4rem;
+  border: 1px solid #fff;
+}
+
+.btn-learn:hover {
+  color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+/*********************************
+*        SECTION CUISINE         *
+*********************************/
+.section-cuisine {
+  padding: 10rem 3.2rem;
+}
+
+.cuisine {
+  max-width: 130rem;
+  margin: 0 auto;
+}
+
+.cui-1,
+.cui-2 {
+  padding: 7.5rem 0rem;
+}
+
+.cui-1 {
+  padding-top: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+}
+
+.cui-1 .cui-img-box {
+  flex: 0 0 45%;
+  height: 36rem;
+  background-image: url(../assets/img/teamImg/kitchen-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.cui-1 .cui-text-box {
+  flex: 0 0 52rem;
+  padding: 0 2.5rem;
+}
+
+.cui-1 .parag-box .cui-text:first-child {
+  margin-bottom: var(--space-sm);
+}
+
+.cui-text {
+  font-weight: var(--fw-light);
+  font-size: clamp(1.2rem, 1.0802rem + 0.7665vw, 2rem);
+  line-height: 1.5;
+  text-align: justify;
+  text-align-last: left;
+}
+
+.cui-text span {
+  font-weight: var(--fw-bold);
+}
+
+.cui-2 {
+  padding-top: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+}
+
+.cui-2 .cui-img-box {
+  flex: 0 0 45%;
+  height: 36rem;
+  background-image: url(../assets/img/teamImg/kitchen-2.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.cui-2 .cui-text-box {
+  flex: 0 0 52rem;
+  padding: 0 2.5rem;
+}
+
+.cui-2 .cui-text {
+  margin-bottom: var(--space-md);
+}
+
+.cui-ach-list {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+
+  text-align: center;
+}
+
+.cui-ach-list .ach-num {
+  font-size: clamp(2.2rem, 1.9904rem + 1.3413vw, 3.6rem);
+  font-weight: var(--fw-light);
+  font-family: var(--tertiary-font);
+  margin-bottom: var(--space-sm);
+}
+
+.cui-ach-list .ach-text {
+  font-size: clamp(1.2rem, 1.0802rem + 0.7665vw, 2rem);
+}
+
+/*********************************
+*        SECTION TEAM            *
+*********************************/
+.section-team {
+  padding: 10rem 3.2rem;
+}
+
+.team {
+  max-width: 130rem;
+  margin: 0 auto;
+}
+
+.team .headings-box {
+  text-align: center;
+}
+
+.workers-box {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.worker {
+  flex: 0 0 30%;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.2);
+
+  display: flex;
+}
+
+.worker-1 .worker-img-box {
+  flex: 0 0 25%;
+  background-image: url(../assets/img/teamImg/workers/worker-4.jpg);
+  height: 10rem;
+  width: 100%;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  margin-right: var(--space-sm);
+}
+
+.worker-info {
+  margin-bottom: var(--space-md);
+}
+
+.worker-name {
+  margin-bottom: 0.5rem;
+  font-size: clamp(1.2rem, 1.0204rem + 1.1497vw, 2.4rem);
+  font-weight: var(--fw-medium);
+}
+
+.worker-job {
+  font-size: clamp(1rem, 0.8503rem + 0.9581vw, 2rem);
+  font-weight: var(--fw-regular);
+  color: var(--secondary-color);
+}
+
+.worker-quote {
+  font-size: clamp(0.8rem, 0.6802rem + 0.7665vw, 1.6rem);
+  max-width: 25rem;
+  font-weight: var(--fw-light);
+  line-height: 1.5;
+  font-style: italic;
+}
+
+.worker-2 .worker-img-box {
+  flex: 0 0 25%;
+  background-image: url(../assets/img/teamImg/workers/worker-5.jpg);
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  margin-right: var(--space-sm);
+}
+
+.worker-3 .worker-img-box {
+  flex: 0 0 25%;
+  background-image: url(../assets/img/teamImg/workers/worker-6.jpg);
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  margin-right: var(--space-sm);
+}
+
+.pagination {
+  margin: 0 auto;
+  max-width: 42rem;
+  margin-top: var(--space-bg);
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.page {
+  flex: 0 0 20%;
+  height: 0.5rem;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.page-active {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/*********************************
+*        SECTION WORK            *
+*********************************/
+.section-work {
+  padding: 10rem 3.2rem;
+
+  background-image: url(../assets/img/backgrounds/text-piedra.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.work {
+  max-width: 130rem;
+  margin: 0 auto;
+}
+
+.work-with-us {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+}
+
+.work-img-box {
+  flex: 0 0 45%;
+  height: 45rem;
+  background-image: url(../assets/img/teamImg/workWithUs.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.work-text-box {
+  flex: 0 0 50rem;
+  padding: 0 2.5rem;
+}
+
+.work-text {
+  font-weight: var(--fw-light);
+  font-size: clamp(1.2rem, 1.0802rem + 0.7665vw, 2rem);
+  line-height: 1.5;
+  text-align: justify;
+  text-align-last: left;
+}
+
+/*********************************
+*          TEAM QUERIES          *
+*********************************/
+
+@media only screen and (max-width: 1080px) {
+  /* CHEF */
+  .chef-1 .chef-text-box,
+  .chef-2 .chef-text-box,
+  .chef-3 .chef-text-box {
+    flex: 0 0 42rem;
+  }
+
+  .chef-3 .chef-img-box {
+    height: 25rem;
+  }
+
+  /* CUISINE */
+  .cui-1 .cui-text-box,
+  .cui-2 .cui-text-box {
+    flex: 0 0 42rem;
+  }
+
+  .cui-1 .cui-img-box {
+    height: 30rem;
+  }
+
+  /* WORK */
+  .work-text-box {
+    flex: 0 0 42rem;
+  }
+
+  .work-img-box {
+    height: 30rem;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  /* CHEF */
+
+  .chef-1 .chef-text-box,
+  .chef-2 .chef-text-box,
+  .chef-3 .chef-text-box {
+    flex: 0 0 32rem;
+  }
+
+  .chef-3 .chef-img-box {
+    height: 20rem;
+  }
+
+  /* CUISINE */
+  .cui-1 .cui-text-box,
+  .cui-2 .cui-text-box {
+    flex: 0 0 32rem;
+  }
+
+  .cui-1 .cui-img-box,
+  .cui-2 .cui-img-box {
+    height: 25rem;
+  }
+
+  /* TEAM */
+  .workers-box {
+    display: block;
+    max-width: 30rem;
+    margin: 0 auto;
+  }
+
+  .worker {
+    margin-bottom: 1rem;
+  }
+
+  .pagination {
+    margin-top: var(--space-bg);
+    max-width: 30rem;
+  }
+
+  /* WORK */
+  .work-text-box {
+    flex: 0 0 32rem;
+  }
+
+  .work-img-box {
+    height: 25rem;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  /* CHEF */
+
+  .chef-1 .chef-text-box,
+  .chef-2 .chef-text-box,
+  .chef-3 .chef-text-box {
+    flex: 0 0 21.5rem;
+    padding: 0;
+  }
+
+  .chef-3 .chef-img-box {
+    height: 15rem;
+  }
+
+  /* CUISINE */
+  .cui-1 .cui-text-box,
+  .cui-2 .cui-text-box {
+    flex: 0 0 21.5rem;
+  }
+
+  .cui-1 .cui-img-box {
+    height: 20rem;
+  }
+
+  /* WORK */
+  .work-text-box {
+    flex: 0 0 21.5rem;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .section-chef,
+  .section-cuisine,
+  .section-work {
+    padding: 5rem 1rem;
+
+    text-align: center;
+  }
+
+  .section-team {
+    padding: 5rem 1rem;
+  }
+
+  .section-chef .headings-box,
+  .section-cuisine .headings-box,
+  .section-team .headings-box,
+  .section-work .headings-box {
+    margin-bottom: var(--space-md);
+    justify-content: center;
+  }
+
+  /* CHEF */
+  .chef-1,
+  .chef-2,
+  .chef-3 {
+    padding: 2.5rem 0;
+  }
+
+  .chef-1 .chef-img-box,
+  .chef-3 .chef-img-box {
+    flex: 0 0 100%;
+    margin-bottom: var(--space-md);
+  }
+
+  /* I use order because I want the img separated */
+  .chef-2 .chef-img-box {
+    flex: 0 0 100%;
+    order: 1;
+    margin-bottom: var(--space-md);
+  }
+
+  .chef-2 .chef-text-box {
+    order: 2;
+    margin-bottom: 0;
+  }
+
+  .chef-3 .chef-img-box {
+    height: 25rem;
+  }
+
+  .chef-1 .chef-text-box,
+  .chef-2 .chef-text-box,
+  .chef-3 .chef-text-box {
+    flex: 0 0 100%;
+  }
+
+  /* CUISINE */
+  .cui-1,
+  .cui-2 {
+    padding: 2.5rem 0;
+  }
+
+  .cui-1 .cui-img-box,
+  .cui-2 .cui-img-box {
+    flex: 0 0 100%;
+    height: 36rem;
+    margin-bottom: var(--space-md);
+  }
+
+  .cui-1 .cui-text-box,
+  .cui-2 .cui-text-box {
+    flex: 0 0 100%;
+  }
+
+  .cui-1 h3:nth-child(2),
+  .cui-2 h3:nth-child(2) {
+    margin-bottom: var(--space-md);
+  }
+
+  .cui-2 .cui-img-box {
+    order: 1;
+  }
+  .cui-2 .cui-text-box {
+    order: 2;
+  }
+
+  /* TEAM */
+  .worker-info {
+    margin-bottom: var(--space-sm);
+  }
+
+  /* WORK */
+
+  .work-img-box {
+    flex: 0 0 100%;
+    height: 25rem;
+    margin-bottom: var(--space-md);
+  }
+
+  .work-text-box {
+    flex: 0 0 100%;
+  }
+
+  .work h3:nth-child(2) {
+    margin-bottom: var(--space-sm);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* CUISINE */
+  .cui-1 .cui-img-box {
+    height: 25rem;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  /* HERO */
+  .hero {
+    height: 60vh;
+  }
+
+  /* CHEF */
+  .chef-3 .chef-img-box {
+    height: 15rem;
+  }
+
+  /* CUISINE */
+  .cui-1 .cui-img-box {
+    height: 20rem;
+  }
+  .cui-2 .cui-img-box {
+    height: 30rem;
+  }
+
+  /* WORK */
+  .work-img-box {
+    height: 20rem;
+  }
+}

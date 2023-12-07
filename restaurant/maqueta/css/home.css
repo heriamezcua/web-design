@@ -1,0 +1,1102 @@
+/*********************************
+*          SECTION HERO          *
+*********************************/
+
+.section-hero {
+  height: 100vh;
+  width: 100%;
+}
+
+.hero {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+
+  overflow: hidden;
+}
+
+.hero-video {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.5;
+}
+
+video[poster] {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-text-box {
+  position: relative;
+  z-index: 1;
+
+  height: 80vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.hero-text-box .main-title {
+  font-size: clamp(1.2rem, 0.721rem + 3.0659vw, 4.4rem);
+  font-weight: var(--fw-regular);
+  letter-spacing: 0.5rem;
+}
+
+.btn-secure {
+  border: 1px solid #ffffff;
+  padding: 1rem 2rem;
+  font-size: clamp(1.4rem, 1.2503rem + 0.9581vw, 2.4rem);
+  font-weight: 300;
+  margin-top: var(--space-md);
+}
+
+.btn-secure a {
+  transition: all 0.3s;
+}
+
+.btn-secure:hover {
+  color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+.hero .logo-box {
+  position: relative;
+  z-index: 1;
+  margin-top: var(--space-md);
+
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  justify-content: center;
+}
+
+.hero .logo {
+  width: 64px;
+  height: 64px;
+
+  background-image: url(../assets/icons/cherry-tree.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.hero .logo-box .logo-text-box {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-left: 0.8rem;
+}
+
+.hero .logo-box .text-jp {
+  font-family: var(--secondary-font);
+  font-weight: var(--fw-light);
+  font-size: clamp(1.6rem, 1.5401rem + 0.3832vw, 2rem);
+}
+
+.hero .logo-box .text-main {
+  font-family: var(--tertiary-font);
+  font-weight: var(--fw-light);
+  font-size: clamp(2rem, 1.8503rem + 0.9581vw, 3rem);
+  margin-top: 0.8rem;
+}
+
+.hero .logo-box .text-sec {
+  font-weight: var(--fw-light);
+  font-size: clamp(0.8rem, 0.7401rem + 0.3832vw, 1.2rem);
+  margin-top: 0.8rem;
+}
+
+/*********************************
+*         SECTION AWARDS         *
+*********************************/
+
+.section-awards {
+  padding: 10rem 3.2rem;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url(../assets/img/backgrounds/text-piedra.jpg);
+}
+
+.awards {
+  max-width: 130rem;
+  margin: 0 auto;
+}
+
+.section-awards h2 {
+  text-align: center;
+}
+
+.awards-box {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.award {
+  /* border: var(--div-red); */
+  flex: 0 0 32%;
+  height: 25rem;
+
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.award-text-box {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+
+  /* border: var(--div-red); */
+}
+
+.icon-recycle {
+  width: 75px;
+  height: 75px;
+
+  background-image: url(../assets/icons/recycle.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.icon-leaf {
+  width: 200px;
+  height: 75px;
+  margin-bottom: var(--space-sm);
+
+  background-image: url(../assets/icons/leaf.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.text-icon {
+  width: 64px;
+  height: 64px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  margin-right: var(--space-sm);
+}
+
+.text-icon-sustainable {
+  background-image: url(../assets/icons/sostenibilityStar.svg);
+}
+
+.text-icon-michelin {
+  background-image: url(../assets/icons/michelinStar.svg);
+}
+
+.icon-chopsticks {
+  width: 64px;
+  height: 64px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url(../assets/icons/chopsticks.svg);
+}
+
+.number {
+  font-family: var(--tertiary-font);
+  font-weight: var(--fw-regular);
+  font-size: 9.8rem;
+  color: var(--secondary-color);
+}
+
+.text-award {
+  font-size: clamp(1.2rem, 1.0204rem + 1.1497vw, 2.4rem);
+}
+
+/*********************************
+*         SECTION HISTORY        *
+*********************************/
+
+.section-history {
+  padding: 10rem 3.2rem;
+}
+
+.section-history .headings-box {
+  margin: 6.4rem auto;
+}
+
+.history {
+  max-width: 130rem;
+  margin: 0 auto;
+}
+
+.hist-1 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.hist-1 .hist-img-box {
+  flex: 0 0 50%;
+  height: 80rem;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url(../assets/img/homeImg/hist-1.jpg);
+}
+
+.hist-1 .hist-text-box {
+  flex: 0 0 50%;
+}
+
+.hist-1 .hist-text {
+  width: 45rem;
+  margin: 0 auto;
+  margin-top: var(--space-md);
+}
+
+.hist-1 h3 {
+  max-width: 45rem;
+  margin: 0 auto;
+  margin-bottom: var(--space-sm);
+}
+
+.hist-text {
+  font-weight: var(--fw-light);
+  font-size: clamp(1.2rem, 1.0802rem + 0.7665vw, 2rem);
+  line-height: 1.5;
+  text-align: justify;
+  text-align-last: left;
+}
+
+.hist-text span {
+  font-weight: var(--fw-bold);
+}
+
+.hist-2 {
+  padding: 5rem 0;
+  margin: 0 auto;
+}
+
+.hist-2 .hist-img-box {
+  width: 100%;
+  height: 300px;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url(../assets/img/homeImg/sushi-pr.jpg);
+}
+
+.hist-2 .hist-text-box {
+  text-align: center;
+}
+
+.hist-2 .hist-text-box .parag-box {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.hist-2 .hist-text-box .parag-box .hist-text {
+  flex: 0 0 50rem;
+  /* padding: 0 4rem; */
+}
+
+.hist-3 {
+  padding: 5rem 0;
+
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  align-content: center;
+}
+
+.hist-3 .hist-img-box {
+  flex: 0 0 50%;
+  height: 50rem;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-image: url(../assets/img/homeImg/hist-3-pr.jpg);
+}
+
+.hist-3 .hist-text-box {
+  flex: 0 0 50%;
+}
+
+.hist-3 .parag-box {
+  margin: 0 auto;
+}
+
+.hist-3 .hist-text-box {
+  max-width: 45rem;
+}
+
+.hist-4 {
+  padding: 5rem 0 0 0; /* I want section bottom margin only 100px*/
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: start;
+  align-content: start;
+}
+
+.hist-4-text-box {
+  flex: 0 0 65%;
+
+  font-weight: var(--fw-light);
+}
+
+.hist-4 .quote {
+  width: 80%;
+}
+
+.hist-4-img-box {
+  flex: 0 0 35%;
+  height: 65rem;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: start center;
+  background-image: url(../assets/img/homeImg/hist-empresario.jpg);
+}
+
+.hist-4 .quote-text {
+  font-size: clamp(1.4rem, 1.1605rem + 1.5329vw, 3rem);
+  /* display: block; */
+  /* font-size: 1.4rem; */
+  font-style: italic;
+  line-height: 1.5;
+  text-align: justify;
+  text-align-last: left;
+}
+
+.hist-4 .quote-author {
+  font-size: clamp(1rem, 0.9102rem + 0.5749vw, 1.6rem);
+  line-height: 1.5;
+  font-weight: var(--fw-light);
+  text-align: justify;
+  text-align-last: left;
+}
+
+/*********************************
+*          SECTION SPACE         *
+*********************************/
+
+.section-space {
+  padding: 10rem 3.2rem;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url(../assets/img/backgrounds/text-madera.jpg);
+}
+
+.space {
+  max-width: 130rem;
+  margin: 0 auto;
+}
+
+.space-1 {
+  padding: 5rem 0;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.space-1-text-box {
+  flex: 0 0 50rem;
+  max-width: 100%;
+
+  justify-self: flex-start;
+}
+
+.space-1-img-box {
+  flex: 0 1 50%;
+  height: 44rem;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url(../assets/img/homeImg/space.jpg);
+}
+
+.space-text {
+  font-weight: var(--fw-light);
+  font-size: clamp(1.2rem, 1.0802rem + 0.7665vw, 2rem);
+  line-height: 1.5;
+  text-align: justify;
+  text-align-last: left;
+}
+
+.space-text span {
+  font-weight: var(--fw-bold);
+}
+
+.space-2 {
+  padding: 5rem 0;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+}
+
+.space-2-img-box {
+  flex: 0 0 40%;
+  height: 52.5rem;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url(../assets/img/homeImg/floormap.png);
+}
+
+.space-2-text-box {
+  flex: 0 0 50rem;
+}
+
+.space-list {
+  margin-left: 2rem;
+  list-style-type: disc;
+
+  font-size: clamp(1.4rem, 1.3102rem + 0.5749vw, 2rem);
+  color: var(--secondary-color);
+}
+
+.space-list li {
+  margin-bottom: var(--space-sm);
+}
+
+.space-list li:last-child {
+  margin-bottom: 0;
+}
+
+/*********************************
+*          SECTION GALLERY       *
+*********************************/
+
+.section-gallery {
+  padding: 0 0 10rem 0;
+}
+
+.gallery {
+  width: 100%;
+
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.row {
+  flex: 0 0 100%;
+
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.gallery .gal-img {
+  flex: 1 0 18rem;
+  height: 51rem;
+  margin: 1.5rem;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.gal-img-1 {
+  background-image: url(../assets/img/homeImg/gallery/gal-1.jpg);
+}
+
+.gal-img-2 {
+  background-image: url(../assets/img/homeImg/gallery/gal-2.jpg);
+}
+
+.gal-img-3 {
+  background-image: url(../assets/img/homeImg/gallery/gal-3.jpg);
+}
+
+.gal-img-4 {
+  background-image: url(../assets/img/homeImg/gallery/gal-4.jpg);
+}
+
+.gal-img-5 {
+  background-image: url(../assets/img/homeImg/gallery/gal-5.jpg);
+}
+.gal-img-6 {
+  background-image: url(../assets/img/homeImg/gallery/gal-6.jpg);
+}
+
+.gal-img-7 {
+  background-image: url(../assets/img/homeImg/gallery/gal-7.jpg);
+}
+
+.gal-img-8 {
+  background-image: url(../assets/img/homeImg/gallery/gal-8.jpg);
+}
+
+.gal-img-9 {
+  background-image: url(../assets/img/homeImg/gallery/gal-9.jpg);
+}
+
+.gal-img-10 {
+  background-image: url(../assets/img/homeImg/gallery/gal-10.jpg);
+}
+
+/*********************************
+*          HOME QUERIES          *
+*********************************/
+
+@media only screen and (max-width: 1080px) {
+  /* AWARDS */
+  .award .number {
+    font-size: 8.6rem;
+  }
+
+  .award .icon-leaf {
+    width: 15rem;
+    height: 5.5rem;
+  }
+
+  /* HISTORY */
+
+  .hist-1 .hist-img-box {
+    height: 60rem;
+  }
+
+  .hist-1 h3 {
+    width: 30rem;
+  }
+
+  .hist-1 .hist-text {
+    width: 30rem;
+  }
+
+  .hist-2 .hist-img-box {
+    height: 20rem;
+  }
+
+  .hist-2 .hist-text-box .parag-box .hist-text {
+    flex: 0 0 35rem;
+    /* padding: 0 4rem; */
+  }
+
+  .hist-3 .hist-img-box {
+    height: 55rem;
+  }
+
+  .hist-3 h3 {
+    width: 30rem;
+    margin: 1.6rem auto;
+  }
+
+  .hist-3 h3:nth-child(2) {
+    margin-bottom: 3.2rem !important;
+  }
+
+  .hist-3 .parag-box {
+    width: 30rem;
+  }
+
+  .hist-4-img-box {
+    height: 50rem;
+  }
+
+  /* SPACE */
+  .space-1-text-box {
+    flex: 0 0 37rem;
+  }
+
+  .space-2-text-box {
+    flex: 0 0 37rem;
+  }
+
+  /* GALLERY */
+
+  .gallery .gal-img {
+    flex: 1 0 12rem;
+    height: 35rem;
+    margin: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 831px) {
+  /* AWARDS */
+
+  .section-awards .headings-box {
+    margin-bottom: var(--space-md);
+  }
+
+  .award .icon-leaf {
+    width: 10rem;
+    height: 3.7rem;
+  }
+
+  .award .number {
+    font-size: 7.4rem;
+  }
+
+  .award .icon-recycle {
+    width: 65px;
+    height: 65px;
+  }
+
+  .award .text-icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .award .icon-chopsticks {
+    height: 48px;
+  }
+
+  /* HISTORY */
+  .hist-2 .hist-text-box .parag-box .hist-text {
+    flex: 0 0 30rem;
+  }
+
+  .hist-4-img-box {
+    height: 40rem;
+  }
+
+  /* SPACE */
+  .space-1-text-box {
+    flex: 0 0 32rem;
+  }
+
+  .space-2-text-box {
+    flex: 0 0 32rem;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  /* HISTORY */
+  .hist-1 h3 {
+    width: 22rem;
+  }
+
+  .hist-1 .hist-text {
+    width: 22rem;
+  }
+
+  .hist-2 .hist-text-box .parag-box .hist-text {
+    flex: 0 0 25rem;
+  }
+
+  .hist-3 h3 {
+    width: 25rem;
+  }
+
+  .hist-3 .parag-box {
+    width: 25rem;
+  }
+
+  .hist-4-img-box {
+    height: 35rem;
+  }
+
+  /* SPACE */
+  .space-1-text-box {
+    flex: 0 0 27rem;
+  }
+
+  .space-2-text-box {
+    flex: 0 0 27rem;
+  }
+
+  /* GALLERY */
+  .gallery .gal-img {
+    flex: 1 0 20rem;
+    height: 35rem;
+  }
+}
+
+@media only screen and (max-width: 647px) {
+  /* AWARDS */
+  .award .icon-recycle {
+    width: 50px;
+    height: 50px;
+  }
+
+  .award .number {
+    font-size: 6.2rem;
+  }
+
+  .award .text-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .award .icon-chopsticks {
+    height: 32px;
+  }
+
+  /* HISTORY */
+
+  .hist-2 .hist-text-box .parag-box .hist-text {
+    flex: 0 0 20rem;
+  }
+
+  .hist-3 h3 {
+    width: 22rem;
+  }
+
+  .hist-3 .parag-box {
+    width: 22rem;
+  }
+
+  .hist-4 {
+    align-items: center;
+    align-content: center;
+  }
+
+  .hist-4-img-box {
+    height: 30rem;
+  }
+
+  /* SPACE */
+  .space-1-text-box {
+    flex: 0 0 22rem;
+  }
+
+  .space-2-text-box {
+    flex: 0 0 22rem;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  /* HERO */
+  .hero {
+    padding: 0 1rem;
+  }
+
+  /* AWARDS */
+  .section-awards,
+  .section-history,
+  .section-space,
+  .section-gallery {
+    padding: 5rem 1rem;
+  }
+
+  .award {
+    /* border: var(--div-red); */
+    flex: 0 0 100%;
+    height: 100%;
+
+    margin-bottom: var(--space-md);
+  }
+
+  .award .icon-leaf {
+    width: 10rem;
+    height: 3.7rem;
+  }
+
+  .award .icon-recycle {
+    width: 60px;
+    height: 60px;
+  }
+
+  .award .number {
+    font-size: 7.4rem;
+  }
+
+  .award .text-icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .award .icon-chopsticks {
+    height: 48px;
+  }
+
+  /* HISTORY */
+  .hist-2,
+  .hist-3,
+  .hist-4 {
+    padding: 5rem 0 0 0;
+  }
+
+  .section-history .headings-box {
+    margin: 0 0 3.2rem 0;
+  }
+
+  .hist-1 {
+    display: block;
+  }
+
+  .hist-1 .hist-img-box {
+    width: 100%;
+    height: 50rem;
+    margin: 0 auto;
+
+    margin-bottom: var(--space-sm);
+  }
+
+  .hist-1 h3 {
+    width: 100%;
+    margin: 0;
+  }
+
+  .hist-1 h3:first-child {
+    margin-bottom: var(--space-sm);
+  }
+
+  .hist-1 .hist-text {
+    width: 100%;
+    line-height: 2;
+  }
+
+  .hist-2 .hist-img-box {
+    background-size: cover;
+    height: 10rem;
+  }
+
+  .hist-3 {
+    display: block;
+  }
+
+  .hist-3 .hist-img-box {
+    height: 40rem;
+  }
+
+  .hist-3 h3:first-child {
+    margin-top: var(--space-sm);
+  }
+
+  .hist-3 h3 {
+    width: 100%;
+  }
+
+  .hist-3 .hist-text-box {
+    max-width: 100%;
+  }
+
+  .hist-3 .parag-box {
+    width: 100%;
+  }
+
+  .hist-4-text-box {
+    flex: 0 0 100%;
+
+    margin-bottom: var(--space-sm);
+  }
+
+  .hist-4 .quote {
+    width: 100%;
+  }
+
+  .hist-4-img-box {
+    flex: 0 0 75%;
+    height: 50rem;
+  }
+
+  /* SPACE */
+  .section-space h2:last-child {
+    margin-bottom: 0;
+  }
+
+  .space-1-text-box {
+    flex: 0 0 100%;
+  }
+
+  .space-1-img-box {
+    flex: 0 1 100%;
+    margin-top: var(--space-sm);
+  }
+
+  .space-2 {
+    padding: 0;
+  }
+
+  .space-2-text-box {
+    flex: 0 0 100%;
+  }
+  .space-2-img-box {
+    flex: 0 0 100%;
+    margin-top: 0;
+    margin-bottom: var(--space-sm);
+    height: 45rem;
+  }
+
+  .space-2-text-box .space-list {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  /* GALLERY */
+  .gallery .gal-img {
+    flex: 1 0 14rem;
+    height: 20rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* HERO */
+  .hero .logo {
+    width: 48px;
+    height: 48px;
+  }
+
+  .hero .logo-box {
+    justify-content: flex-start;
+  }
+
+  /* AWARDS */
+  .award {
+    margin-bottom: var(--space-md);
+  }
+
+  .award .icon-recycle {
+    width: 50px;
+    height: 50px;
+  }
+
+  .award .number {
+    font-size: 6.2rem;
+  }
+
+  .award .text-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .award .icon-chopsticks {
+    height: 48px;
+  }
+
+  /* HISTORY */
+
+  .hist-1 .hist-text {
+    margin-top: var(--space-sm);
+  }
+
+  .hist-2 .hist-text-box .parag-box {
+    display: block;
+  }
+
+  .hist-2 .hist-text-box .parag-box .hist-text:first-child {
+    margin-bottom: var(--space-sm);
+  }
+
+  .hist-3 .hist-img-box {
+    height: 30rem;
+  }
+
+  .hist-4-img-box {
+    flex: 0 0 65%;
+    height: 40rem;
+  }
+
+  /* SPACE */
+  .space-1-img-box {
+    height: 34rem;
+  }
+
+  .space-2-img-box {
+    height: 35rem;
+  }
+
+  /* GALLERY */
+  .gallery .gal-img {
+    flex: 1 0 10rem;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  /* HISTORY */
+
+  .hist-1 h3:first-child,
+  .hist-2 h3:first-child,
+  .hist-3 h3:first-child,
+  .hist-4 h3:first-child {
+    margin-bottom: 1rem;
+  }
+
+  .hist-1 h3:nth-child(2),
+  .hist-2 h3:nth-child(2),
+  .hist-3 h3:nth-child(2),
+  .hist-4 h3:nth-child(2) {
+    margin-bottom: 1.6rem !important;
+  }
+
+  .hist-1 .hist-img-box {
+    height: 30rem;
+  }
+
+  .hist-1 .hist-text {
+    width: 100%;
+  }
+
+  .hist-3 .hist-img-box {
+    height: 20rem;
+  }
+
+  .hist-4-img-box {
+    flex: 0 0 100%;
+    height: 40rem;
+  }
+
+  /* SPACE */
+  .space-1-img-box {
+    height: 28rem;
+  }
+
+  .space-2-img-box {
+    height: 30rem;
+  }
+
+  /* GALLERY */
+  .gallery .gal-img {
+    flex: 1 0 10rem;
+  }
+}
+
+@media only screen and (max-width: 250px) {
+  .hist-4-img-box {
+    flex: 0 0 100%;
+    height: 32rem;
+  }
+
+  /* SPACE */
+  .space-1-img-box {
+    height: 22rem;
+  }
+
+  .space-2-img-box {
+    height: 35rem;
+  }
+
+  /* GALLERY */
+  .gallery .gal-img {
+    flex: 1 0 7rem;
+  }
+}
