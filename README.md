@@ -3,10 +3,10 @@
 In this repository you will find the different projects that I have carried out in the web design module of the higher degree or my own projects</p>
 
 <h2>Architecture Studio</h2>
-<a href="https://vanguard-architecture.netlify.app/" >Vanguard</a>
+<a href="https://vanguard-heriamezcua.netlify.app/" >Vanguard</a>
 
 <h2>Travel Agency</h2>
-<a href="https://turkeytravel-agency.netlify.app/" >Turkey Travel Agency</a>
+<a href="https://turkeytravel-heriamezcua.netlify.app/" >Turkey Travel Agency</a>
 
 <h2>Restaurant</h2>
 <a href="https://restaurant-heriamezcua.netlify.app/" >Restaurant</a>
