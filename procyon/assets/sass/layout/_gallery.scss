@@ -1,0 +1,87 @@
+.gallery {
+  display: grid;
+  grid-gap: 3px;
+  grid-template-areas:
+    'a a c c d'
+    'a a c c d'
+    'e e e b b'
+    'e e e b b';
+
+  grid-template-rows: 270px 270px 270px 270px;
+
+  @include respond(tab-port) {
+    grid-template-areas:
+      'a a a c c'
+      'a a a c c'
+      'd d e e e'
+      'd d e e e'
+      'b b e e e';
+
+    grid-template-rows: 189px 189px 189px 189px 189px;
+  }
+
+  @include respond(phone-480) {
+    grid-template-areas:
+      'a'
+      'b'
+      'c'
+      'd'
+      'e';
+
+    grid-template-rows: 400px 400px 400px 400px 400px;
+  }
+
+  &__img-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &--1 {
+      grid-area: a;
+    }
+
+    &--2 {
+      grid-area: b;
+    }
+
+    &--3 {
+      grid-area: c;
+    }
+
+    &--4 {
+      grid-area: d;
+    }
+
+    &--5 {
+      grid-area: e;
+    }
+
+    &--6 {
+      grid-area: f;
+    }
+  }
+
+  &__light-link {
+    width: 100%;
+    height: 100%;
+
+    &:hover {
+      cursor: crosshair;
+
+      @include respond(phone-480) {
+        pointer-events: none;
+      }
+    }
+  }
+
+  &__img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    display: inline-block;
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

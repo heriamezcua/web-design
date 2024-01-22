@@ -1,0 +1,110 @@
+.story {
+  width: 75%;
+  margin: 0 auto;
+  box-shadow: var(--shadow-dark);
+  background-color: rgba(#fff, 0.8);
+  border-radius: 3px;
+  padding: 6rem;
+  padding-left: 9rem;
+  font-size: var(--default-font-size);
+  transform: skewX(-12deg);
+
+  @include respond(tab-port) {
+    width: 100%;
+    padding: 4rem;
+    padding-left: 7rem;
+  }
+
+  @include respond(phone) {
+    transform: skewX(0);
+  }
+
+  @include respond(phone-480) {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    align-content: center;
+
+    padding: 3rem;
+  }
+
+  &__heading {
+    font-size: var(--story-heading-font-size);
+  }
+
+  &__shape {
+    transform: translateX(-3rem) skewX(12deg);
+    width: 15rem;
+    height: 15rem;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+
+    @supports (
+      clip-path: polygon(0 0) or
+        (
+          -webkit-clip-path: polygon(0 0),
+        )
+    ) {
+      -webkit-clip-path: circle(50% at 50% 50%);
+      clip-path: circle(50% at 50% 50%);
+      -webkit-shape-outside: circle(50% at 50% 50%);
+      shape-outside: circle(50% at 50% 50%);
+      border-radius: none;
+    }
+
+    @include respond(phone) {
+      transform: translateX(-3rem) skewX(0);
+
+      width: 12rem;
+      height: 12rem;
+    }
+
+    @include respond(phone-480) {
+      margin-bottom: 2rem;
+      transform: translateX(0) skewX(0);
+    }
+  }
+
+  &__image {
+    height: 100%;
+    transform: translateX(-4rem) scale(1.4);
+    backface-visibility: hidden;
+    transition: all 0.3s;
+  }
+
+  &__text {
+    font-size: var(--default-font-size);
+    color: var(--color-grey-dark-2);
+    transform: skewX(12deg);
+
+    @include respond(phone) {
+      transform: skewX(0);
+    }
+  }
+
+  &__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    color: var(--color-white);
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.3s;
+    backface-visibility: hidden;
+  }
+
+  &:hover &__caption {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+
+  &:hover &__image {
+    transform: translateX(-4rem) scale(1);
+    filter: blur(3px) brightness(80%);
+  }
+}

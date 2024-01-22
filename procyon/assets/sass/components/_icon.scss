@@ -1,0 +1,13 @@
+.icon {
+  &--arrow {
+    stroke: var(--color-white);
+    width: 3.2rem;
+    height: 3.2rem;
+    margin-left: 10px;
+
+    @include respond(phone-480) {
+      width: 2.4rem;
+      height: 2.4rem;
+    }
+  }
+}

@@ -1,0 +1,117 @@
+.abs-img-dec {
+  width: 100%;
+  position: relative;
+
+  &--1 {
+    // esta modificacion la he usado en mission
+    height: 36.33rem;
+
+    @include respond(phone) {
+      height: 24.52rem;
+    }
+
+    @include respond(phone-480) {
+      height: 24.52rem;
+    }
+  }
+
+  &--2 {
+    // esta modificacion la he usado en team
+    height: 65rem;
+
+    @include respond(phone) {
+      height: 50rem;
+    }
+
+    @include respond(phone-480) {
+      height: 40rem;
+    }
+  }
+
+  &__img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    &--1 {
+      background-image: url(../img/mission.jpg);
+      background-size: cover;
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center center;
+    }
+
+    &--2 {
+      background-image: url(../img/team.jpg);
+      background-size: cover;
+      background-size: cover;
+      background-position: center center;
+    }
+  }
+
+  &__block {
+    position: absolute;
+    background-color: var(--color-primary);
+
+    &--1 {
+      top: 0;
+      left: 0;
+      transform: translate(-5%, -30%);
+      width: 100%;
+      height: 10%;
+    }
+
+    &--2 {
+      top: 20%;
+      right: -25px;
+      z-index: 1;
+      width: 50px;
+      height: 50px;
+
+      animation: top-down 20s linear infinite;
+    }
+
+    &--3 {
+      top: 0;
+      right: 0;
+      transform: translate(5%, -10%);
+      width: 50%;
+      height: 50%;
+    }
+
+    &--4 {
+      bottom: 25%;
+      left: -25px;
+      z-index: 1;
+      width: 50px;
+      height: 50px;
+
+      animation: orbit 8s linear infinite;
+    }
+
+    &--5 {
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 50%;
+      height: 10%;
+
+      // animation: orbit 8s linear infinite;
+    }
+
+    &--6 {
+      bottom: -25px;
+      left: 30%;
+      width: 50px;
+      height: 50px;
+      z-index: 1;
+
+      animation: left-right 60s linear infinite;
+    }
+  }
+
+  &__box {
+    width: 100%;
+    height: 100%;
+  }
+}

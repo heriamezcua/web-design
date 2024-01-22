@@ -1,0 +1,233 @@
+.card {
+  perspective: 150rem; // make the animation more natural
+  position: relative;
+  height: 52rem;
+  max-width: 120rem;
+  margin: 0 auto;
+  width: 100%;
+
+  &__side {
+    height: 52rem;
+    transition: all 0.8s ease;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden; // hide back of the card
+    overflow: hidden;
+
+    border-radius: 3px;
+    box-shadow: 0 0rem 4rem rgba(0, 0, 0, 0.2);
+
+    &--front {
+      background-color: var(--color-white);
+      display: flex;
+
+      @include respond(tab-port) {
+        flex-flow: column nowrap;
+        height: auto;
+      }
+    }
+
+    &--back {
+      transform: rotateX(-180deg);
+
+      &-1 {
+        background-image: linear-gradient(
+          to right bottom,
+          var(--color-primary-light),
+          var(--color-primary-dark)
+        );
+      }
+
+      &-2 {
+        background-image: linear-gradient(
+          to right bottom,
+          var(--color-secondary-light),
+          var(--color-secondary-dark)
+        );
+      }
+    }
+  }
+
+  &:hover &__side--front {
+    transform: rotateX(180deg);
+  }
+
+  &:hover &__side--back {
+    transform: rotateX(0);
+  }
+
+  // Front side styling
+  &__picture {
+    flex: 0 0 50%;
+
+    background-size: cover;
+    background-blend-mode: screen;
+    clip-path: polygon(0 0, 30% 0, 100% 40%, 100% 100%, 0 100%);
+
+    @include respond(tab-port) {
+      flex: 0 0 30rem;
+      width: 100%;
+    }
+
+    @include respond(phone) {
+      flex: 0 0 25rem;
+    }
+
+    &--1 {
+      background-image: linear-gradient(
+          to right bottom,
+          var(--color-primary-light),
+          var(--color-primary-dark)
+        ),
+        url(../img/tour-1.jpg);
+    }
+
+    &--2 {
+      background-image: linear-gradient(
+          to right bottom,
+          var(--color-secondary-light),
+          var(--color-secondary-dark)
+        ),
+        url(../img/tour-2.jpg);
+    }
+  }
+
+  &__heading {
+    font-family: var(--font-secondary);
+    font-size: var(--card-heading-fs);
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--color-black);
+    position: absolute;
+    top: 5rem;
+    left: 0rem;
+    text-align: center;
+    width: 60%;
+
+    @include respond(tab-port) {
+      top: 3rem;
+      width: 90%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__particles-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    & #particles-blue canvas {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+  }
+
+  &__details {
+    width: 100%;
+    align-self: center;
+    padding: 3rem;
+    position: relative;
+
+    ul {
+      list-style: none;
+      width: 100%;
+      margin: 0 auto;
+
+      li {
+        max-width: 30rem;
+        margin: 0 auto;
+        text-align: center;
+        font-size: var(--default-font-size);
+        color: var(--color-black);
+        padding: 1rem;
+
+        &:not(:last-child) {
+          border-bottom: 1px solid var(--color-black);
+        }
+      }
+    }
+  }
+
+  // BACK side styling
+  &__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+  }
+
+  &__price-box {
+    text-align: center;
+    color: var(--color-white);
+    margin-bottom: 8rem;
+  }
+
+  &__price-only {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+  }
+
+  &__price-value {
+    font-size: 6rem;
+    font-weight: 100;
+  }
+
+  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
+    // Functionality
+    height: auto;
+    border-radius: 3px;
+    background-color: var(--color-white);
+    box-shadow: 0 1.5rem 4rem rgba(var(--color-black), 0.15);
+
+    &__side {
+      height: auto;
+      position: relative;
+      box-shadow: none;
+
+      &--back {
+        transform: rotateX(0);
+      }
+    }
+
+    &:hover &__side--front {
+      transform: rotateX(0);
+    }
+
+    &__details {
+      padding: 1rem 3rem;
+      position: relative;
+    }
+
+    // BACK side styling
+    &__cta {
+      position: relative;
+      top: 0%;
+      left: 0%;
+      transform: translate(0);
+      width: 100%;
+      padding: 7rem 4rem 4rem 4rem;
+
+      @include respond(phone) {
+        padding: 2rem;
+      }
+    }
+
+    &__price-box {
+      margin-bottom: 3rem;
+    }
+
+    &__price-value {
+      font-size: 4rem;
+    }
+  }
+}

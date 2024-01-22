@@ -1,0 +1,71 @@
+.vertical-lines {
+  width: 100%;
+  height: 100%;
+
+  &__list {
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__line {
+    flex: 0 0 2px;
+    height: 100%;
+    background-color: var(--color-grey-light-3);
+    position: relative;
+  }
+
+  &__line--1::before {
+    content: '';
+    position: absolute;
+    left: -1px;
+    width: 4px;
+    height: 50px;
+    background-color: var(--color-primary);
+    animation: line-top-down 20s infinite cubic-bezier(0.17, 0.67, 0.67, 0.1);
+  }
+
+  &__line--2::before {
+    content: '';
+    position: absolute;
+    left: -1px;
+    width: 4px;
+    top: 50%;
+    transform: translateX(-50%);
+    height: 50px;
+    background-color: var(--color-primary);
+    animation: line-middle-top-down 20s infinite
+      cubic-bezier(0.17, 0.67, 0.67, 0.1);
+  }
+
+  &__line--3::after {
+    content: '';
+    position: absolute;
+    left: -1px;
+    width: 4px;
+    bottom: 0;
+    // transform: translateX(-100%);
+    height: 50px;
+    background-color: var(--color-primary);
+    animation: line-down-top 20s infinite cubic-bezier(0.17, 0.67, 0.67, 0.1);
+  }
+
+  &__line--4::before {
+    content: '';
+    position: absolute;
+    left: -1px;
+    width: 4px;
+    bottom: 0;
+    height: 50px;
+    background-color: var(--color-primary);
+    animation: line-down-top-2 20s infinite cubic-bezier(0.17, 0.67, 0.67, 0.1);
+  }
+
+  @include respond(phone-480) {
+    &__line:nth-child(1) {
+      display: none;
+    }
+  }
+}

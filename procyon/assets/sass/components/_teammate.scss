@@ -1,0 +1,139 @@
+.teammate {
+  flex: 0 0 25%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: center;
+
+  &__up {
+    flex: 0 0 30rem;
+    width: 30rem;
+
+    display: flex;
+    flex-flow: column nowrap;
+
+    @include respond(phone-480) {
+      flex: 0 0 25rem;
+      width: 25rem;
+    }
+  }
+
+  &__down {
+    padding: 0 1rem 4rem 1rem;
+  }
+
+  &__img {
+    flex: 0 0 90%;
+    height: 30rem;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @include respond(phone-480) {
+      flex: 0 0 25rem;
+      width: 25rem;
+    }
+
+    &--1 {
+      background-image: url(../img/employee-1.jpg);
+    }
+
+    &--2 {
+      background-image: url(../img/employee-2.jpg);
+    }
+
+    &--3 {
+      background-image: url(../img/employee-3.jpg);
+    }
+
+    &--4 {
+      background-image: url(../img/employee-4.jpg);
+    }
+  }
+
+  &__social-list {
+    flex: 0 1 10%;
+    padding: 1rem;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    list-style: none;
+
+    background-color: var(--color-primary-light);
+    clip-path: polygon(0% 0%, 0% 75%, 50% 100%, 100% 75%, 100% 0%);
+
+    & a {
+      position: relative;
+      display: block;
+      width: 35px;
+      height: 35px;
+      text-align: center;
+      line-height: 38px;
+      background: var(--color-primary-light);
+      // border-radius: 50%;
+      font-size: 30px;
+      color: #666;
+      transition: 0.5s;
+    }
+
+    & a:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background: #fff;
+      transition: 0.5s;
+      transform: scale(0.9);
+      z-index: -1;
+    }
+
+    & a:hover::before {
+      transform: scale(1.1);
+      box-shadow: 0 0 5px #fff;
+    }
+
+    // a:hover {
+    //   color: #fff;
+    //   box-shadow: 0 0 2.5px #fff;
+    //   text-shadow: 0 0 2.5px #fff;
+    // }
+  }
+
+  &__social-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    fill: #fff;
+    transition: all 0.2s;
+
+    // .teammate__list-item:hover & {
+    //   fill: var(--color-grey-dark-3);
+    // }
+
+    &--path {
+      fill: #fff;
+      transition: all 0.2s;
+    }
+
+    .teammate__list-item:hover &--path {
+      // fill: var(--color-grey-light-2);
+      fill: #fff;
+      box-shadow: 0 0 5px #fff;
+      text-shadow: 0 0 5px #fff;
+    }
+  }
+
+  &__name {
+    font-size: var(--story-heading-font-size);
+    font-weight: 600;
+    color: var(--color-grey-dark-1);
+  }
+
+  &__role {
+    font-size: var(--default-font-size);
+  }
+}

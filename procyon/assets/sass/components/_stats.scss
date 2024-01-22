@@ -1,0 +1,17 @@
+.stat {
+  flex: 0 0 33%;
+  text-align: center;
+
+  &__numb {
+    font-size: var(--stat-number-font-size);
+    font-weight: 600;
+    color: var(--color-primary);
+  }
+
+  &__text {
+    font-size: var(--default-font-size);
+    font-weight: 500;
+    color: var(--color-grey-dark-2);
+  }
+}
+

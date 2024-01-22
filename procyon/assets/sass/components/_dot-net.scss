@@ -1,0 +1,77 @@
+.dot-net {
+  list-style: none;
+
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-25%, -50%);
+
+  width: 60%;
+  height: 60%;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+
+  @include respond(tab-port) {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+  }
+
+  &__wire {
+    height: 100%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+  }
+
+  &__dot {
+    width: 8px;
+    height: 8px;
+    border: 1px solid var(--color-grey-light-3);
+    opacity: 0.5;
+  }
+
+  &__dot--active {
+    animation-name: fill-dot;
+    animation-iteration-count: infinite;
+  }
+
+  &__dot--active--1 {
+    animation-duration: 7s;
+    animation-delay: 1s;
+  }
+
+  &__dot--active--2 {
+    animation-duration: 9s;
+    animation-delay: 3s;
+  }
+
+  &__dot--active--3 {
+    animation-duration: 12s;
+    animation-delay: 5s;
+  }
+
+  &__dot--active--4 {
+    animation-duration: 14s;
+    animation-delay: 7s;
+  }
+
+  &__dot--active--5 {
+    animation-duration: 16s;
+    animation-delay: 9s;
+  }
+
+  &__dot--active--6 {
+    animation-duration: 18s;
+    animation-delay: 11s;
+  }
+
+  &__dot--active--7 {
+    animation-duration: 20s;
+    animation-delay: 13s;
+  }
+}

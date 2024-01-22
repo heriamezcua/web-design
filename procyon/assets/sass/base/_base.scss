@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600&display=swap');
+
+@import url('@fortawesome/fontawesome-free/css/all.min.css');
+
+@font-face {
+  font-family: 'space-explorer';
+  src: url(../fonts/SPACE-EXPLORER.otf), url(../fonts/SPACE-EXPLORER.ttf);
+}
+
+@font-face {
+  font-family: 'pirulen';
+  src: url(../fonts/pirulen.otf);
+}
+
+:root {
+  --font-primary: 'Montserrat', sans-serif;
+  --font-secondary: 'Orbitron', sans-serif;
+  --font-logo: 'Orbitron', serif;
+
+  --logo-font-size: clamp(2.2rem, 1.7517rem + 2.2069vw, 4.4rem);
+  --default-font-size: clamp(1.6rem, 1.5185rem + 0.4013vw, 2rem);
+
+  --stat-number-font-size: clamp(1.8rem, 1.6777rem + 0.6019vw, 2.4rem);
+  --location-title-font-size: clamp(2.2rem, 2.037rem + 0.8025vw, 3rem);
+  --office-phone-font-size: clamp(1.4rem, 1.3592rem + 0.2006vw, 1.6rem);
+  // TYPOGRAPHY
+  --heading-hero-font-size: clamp(4rem, 3.7555rem + 1.2038vw, 5.2rem);
+  --heading-primary-font-size: clamp(3rem, 2.7147rem + 1.4044vw, 4.4rem);
+  --heading-secondary-font-size: clamp(2.6rem, 2.3962rem + 1.0031vw, 3.6rem);
+  --heading-tertiary-font-size: clamp(1.6rem, 1.4777rem + 0.6019vw, 2.2rem);
+
+  // FACTS
+  --fact-title-fs: clamp(2rem, 1.9185rem + 0.4013vw, 2.4rem);
+  --fact-number-fs: clamp(3rem, 2.7962rem + 1.0031vw, 4rem);
+
+  // CARD
+  --card-heading-fs: clamp(2.4rem, 2.2777rem + 0.6019vw, 3rem);
+
+  // STORY
+  --story-heading-font-size: clamp(1.8rem, 1.6777rem + 0.6019vw, 2.4rem);
+
+  // JOURNEY
+  --journey-number-fs: clamp(2.2rem, 2.037rem + 0.8025vw, 3rem);
+  --journey-heading-fs: clamp(2.6rem, 2.3962rem + 1.0031vw, 3.6rem);
+  --journey-btn-fs: clamp(2rem, 1.9185rem + 0.4013vw, 2.4rem);
+
+  // TEAM
+  --team-skill-number-fs: clamp(2rem, 1.9185rem + 0.4013vw, 2.4rem);
+
+  --color-primary: #0000dd;
+
+  --color-primary-light: #3333e4;
+
+  --color-primary-dark: #0000b1;
+  --color-primary-dark-2: #000085;
+
+  --color-secondary-light: #c933e4;
+  --color-secondary-dark: #b10088;
+
+  --color-white: #fff;
+  --color-black: #000;
+
+  --color-grey-light-1: #faf9f9;
+  --color-grey-light-2: #f4f2f2;
+  --color-grey-light-3: #f0eeee;
+  --color-grey-light-4: #ccc;
+
+  --color-grey-dark-1: #111;
+  --color-grey-dark-2: #222;
+  --color-grey-dark-3: #777;
+  --color-grey-dark-4: #999;
+
+  // Shadows
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  --shadow-primary: rgba(0, 0, 221, 0.3);
+
+  --line: 1px solid var(--color-grey-light-2);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; // 1rem = 10px
+  scroll-behavior: smooth;
+
+  height: auto;
+}
+
+body {
+  box-sizing: border-box;
+  height: auto;
+}
+
+::selection {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}

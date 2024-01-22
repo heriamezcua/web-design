@@ -1,0 +1,57 @@
+.bg-deco {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-flow: row nowrap;
+
+  @include respond(tab-port) {
+    flex-flow: row wrap-reverse;
+  }
+
+  &__box {
+    position: relative; // this is for dot-net
+    flex: 0 0 40%;
+    height: 100%;
+    background-color: var(--color-grey-dark-1);
+
+    @include respond(tab-land) {
+      flex: 0 0 45%;
+    }
+
+    @include respond(tab-port) {
+      flex: 0 0 100%;
+      height: 60%;
+    }
+
+    @include respond(phone-480) {
+      height: 50%;
+    }
+  }
+
+  &__image {
+    width: 60%;
+    height: 85%;
+    background-size: cover;
+    background-position: center center;
+
+    background-image: linear-gradient(to top, #000, transparent 15%),
+      url(../img/facts.jpg);
+
+    @include respond(tab-land) {
+      width: 55%;
+    }
+
+    @include respond(tab-port) {
+      flex: 0 0 100%;
+      height: 40%;
+    }
+
+    @include respond(phone-480) {
+      height: 50%;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.skills {
+  padding-top: 4rem;
+
+  &__skillbar {
+    margin-bottom: 2rem;
+  }
+
+  &__title-box {
+    display: flex;
+    margin-bottom: 1rem;
+  }
+
+  &__title {
+    font-family: var(--font-secondary);
+    margin-right: auto;
+    font-size: var(--team-skill-number-fs);
+    color: var(--color-grey-dark-2);
+  }
+
+  &__value {
+    color: var(--color-grey-dark-2);
+    text-align: right;
+    font-size: var(--team-skill-number-fs);
+    font-weight: 500;
+  }
+
+  &__bar {
+    width: 0;
+    height: 5px;
+    background-color: #0000dd;
+  }
+}

@@ -1,0 +1,65 @@
+.fact {
+  flex: 0 0 35%;
+
+  padding: 2rem;
+
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+
+  @include respond(tab-port) {
+    flex: 0 0 60%;
+    padding: 1rem 0;
+  }
+
+  @include respond(tab-port) {
+    flex: 0 0 80%;
+  }
+
+  @include respond(phone-480) {
+    flex: 0 0 90%;
+  }
+
+  &__number {
+    font-size: var(--fact-number-fs);
+
+    font-weight: 600;
+    color: var(--color-white);
+  }
+
+  &__icon {
+    width: 5.4rem;
+    height: 5.4rem;
+    fill: var(--color-primary);
+
+    @include respond(phone) {
+      width: 6rem;
+      height: 6rem;
+    }
+  }
+
+  &__title {
+    color: var(--color-white);
+    font-size: var(--fact-title-fs);
+    font-weight: 500;
+    margin-left: 15px;
+    position: relative;
+    padding: 1rem 1.5rem;
+    background-color: rgba(255, 255, 255, 0.15);
+
+    &::before {
+      content: '';
+      width: 30px;
+      height: 5px;
+      background-color: var(--color-primary);
+
+      position: absolute;
+      left: -50px;
+      top: 50%;
+
+      @include respond(phone-480) {
+        left: -40px;
+      }
+    }
+  }
+}
